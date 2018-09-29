@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */; };
+		AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB1B215EFC8C006120F9 /* ViewController.swift */; };
+		AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB20215EFC8E006120F9 /* Assets.xcassets */; };
+		AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */; };
+		AAB9EB2F215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB2E215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift */; };
+		AAB9EB3A215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB39215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift */; };
+		AAB9EB47215F017E006120F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB1D215EFC8C006120F9 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAB9EB2B215EFC8E006120F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAB9EB0E215EFC8C006120F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB9EB15215EFC8C006120F9;
+			remoteInfo = IncomeTaxCalculator;
+		};
+		AAB9EB36215EFC8E006120F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAB9EB0E215EFC8C006120F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB9EB15215EFC8C006120F9;
+			remoteInfo = IncomeTaxCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAB9EB16215EFC8C006120F9 /* IncomeTaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncomeTaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAB9EB1B215EFC8C006120F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAB9EB1E215EFC8C006120F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAB9EB20215EFC8E006120F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAB9EB23215EFC8E006120F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAB9EB25215EFC8E006120F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB9EB2A215EFC8E006120F9 /* IncomeTaxCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncomeTaxCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB9EB2E215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculatorTests.swift; sourceTree = "<group>"; };
+		AAB9EB30215EFC8E006120F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB9EB35215EFC8E006120F9 /* IncomeTaxCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncomeTaxCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB9EB39215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculatorUITests.swift; sourceTree = "<group>"; };
+		AAB9EB3B215EFC8E006120F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAB9EB13215EFC8C006120F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB27215EFC8E006120F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB32215EFC8E006120F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAB9EB0D215EFC8C006120F9 = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB18215EFC8C006120F9 /* IncomeTaxCalculator */,
+				AAB9EB2D215EFC8E006120F9 /* IncomeTaxCalculatorTests */,
+				AAB9EB38215EFC8E006120F9 /* IncomeTaxCalculatorUITests */,
+				AAB9EB17215EFC8C006120F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAB9EB17215EFC8C006120F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB16215EFC8C006120F9 /* IncomeTaxCalculator.app */,
+				AAB9EB2A215EFC8E006120F9 /* IncomeTaxCalculatorTests.xctest */,
+				AAB9EB35215EFC8E006120F9 /* IncomeTaxCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB9EB18215EFC8C006120F9 /* IncomeTaxCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */,
+				AAB9EB1B215EFC8C006120F9 /* ViewController.swift */,
+				AAB9EB1D215EFC8C006120F9 /* Main.storyboard */,
+				AAB9EB20215EFC8E006120F9 /* Assets.xcassets */,
+				AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */,
+				AAB9EB25215EFC8E006120F9 /* Info.plist */,
+			);
+			path = IncomeTaxCalculator;
+			sourceTree = "<group>";
+		};
+		AAB9EB2D215EFC8E006120F9 /* IncomeTaxCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB2E215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift */,
+				AAB9EB30215EFC8E006120F9 /* Info.plist */,
+			);
+			path = IncomeTaxCalculatorTests;
+			sourceTree = "<group>";
+		};
+		AAB9EB38215EFC8E006120F9 /* IncomeTaxCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB39215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift */,
+				AAB9EB3B215EFC8E006120F9 /* Info.plist */,
+			);
+			path = IncomeTaxCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAB9EB15215EFC8C006120F9 /* IncomeTaxCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB9EB3E215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculator" */;
+			buildPhases = (
+				AAB9EB12215EFC8C006120F9 /* Sources */,
+				AAB9EB13215EFC8C006120F9 /* Frameworks */,
+				AAB9EB14215EFC8C006120F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IncomeTaxCalculator;
+			productName = IncomeTaxCalculator;
+			productReference = AAB9EB16215EFC8C006120F9 /* IncomeTaxCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAB9EB29215EFC8E006120F9 /* IncomeTaxCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB9EB41215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculatorTests" */;
+			buildPhases = (
+				AAB9EB26215EFC8E006120F9 /* Sources */,
+				AAB9EB27215EFC8E006120F9 /* Frameworks */,
+				AAB9EB28215EFC8E006120F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAB9EB2C215EFC8E006120F9 /* PBXTargetDependency */,
+			);
+			name = IncomeTaxCalculatorTests;
+			productName = IncomeTaxCalculatorTests;
+			productReference = AAB9EB2A215EFC8E006120F9 /* IncomeTaxCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAB9EB34215EFC8E006120F9 /* IncomeTaxCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB9EB44215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculatorUITests" */;
+			buildPhases = (
+				AAB9EB31215EFC8E006120F9 /* Sources */,
+				AAB9EB32215EFC8E006120F9 /* Frameworks */,
+				AAB9EB33215EFC8E006120F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAB9EB37215EFC8E006120F9 /* PBXTargetDependency */,
+			);
+			name = IncomeTaxCalculatorUITests;
+			productName = IncomeTaxCalculatorUITests;
+			productReference = AAB9EB35215EFC8E006120F9 /* IncomeTaxCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAB9EB0E215EFC8C006120F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Zhiyu Ding";
+				TargetAttributes = {
+					AAB9EB15215EFC8C006120F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					AAB9EB29215EFC8E006120F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = AAB9EB15215EFC8C006120F9;
+					};
+					AAB9EB34215EFC8E006120F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = AAB9EB15215EFC8C006120F9;
+					};
+				};
+			};
+			buildConfigurationList = AAB9EB11215EFC8C006120F9 /* Build configuration list for PBXProject "IncomeTaxCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAB9EB0D215EFC8C006120F9;
+			productRefGroup = AAB9EB17215EFC8C006120F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAB9EB15215EFC8C006120F9 /* IncomeTaxCalculator */,
+				AAB9EB29215EFC8E006120F9 /* IncomeTaxCalculatorTests */,
+				AAB9EB34215EFC8E006120F9 /* IncomeTaxCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAB9EB14215EFC8C006120F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB9EB47215F017E006120F9 /* Main.storyboard in Resources */,
+				AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */,
+				AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB28215EFC8E006120F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB33215EFC8E006120F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAB9EB12215EFC8C006120F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */,
+				AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB26215EFC8E006120F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB9EB2F215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB9EB31215EFC8E006120F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB9EB3A215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAB9EB2C215EFC8E006120F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAB9EB15215EFC8C006120F9 /* IncomeTaxCalculator */;
+			targetProxy = AAB9EB2B215EFC8E006120F9 /* PBXContainerItemProxy */;
+		};
+		AAB9EB37215EFC8E006120F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAB9EB15215EFC8C006120F9 /* IncomeTaxCalculator */;
+			targetProxy = AAB9EB36215EFC8E006120F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAB9EB1D215EFC8C006120F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAB9EB1E215EFC8C006120F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAB9EB23215EFC8E006120F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAB9EB3C215EFC8E006120F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAB9EB3D215EFC8E006120F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAB9EB3F215EFC8E006120F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AAB9EB40215EFC8E006120F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AAB9EB42215EFC8E006120F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncomeTaxCalculator.app/IncomeTaxCalculator";
+			};
+			name = Debug;
+		};
+		AAB9EB43215EFC8E006120F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncomeTaxCalculator.app/IncomeTaxCalculator";
+			};
+			name = Release;
+		};
+		AAB9EB45215EFC8E006120F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IncomeTaxCalculator;
+			};
+			name = Debug;
+		};
+		AAB9EB46215EFC8E006120F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IncomeTaxCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IncomeTaxCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAB9EB11215EFC8C006120F9 /* Build configuration list for PBXProject "IncomeTaxCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB9EB3C215EFC8E006120F9 /* Debug */,
+				AAB9EB3D215EFC8E006120F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB9EB3E215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB9EB3F215EFC8E006120F9 /* Debug */,
+				AAB9EB40215EFC8E006120F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB9EB41215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB9EB42215EFC8E006120F9 /* Debug */,
+				AAB9EB43215EFC8E006120F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB9EB44215EFC8E006120F9 /* Build configuration list for PBXNativeTarget "IncomeTaxCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB9EB45215EFC8E006120F9 /* Debug */,
+				AAB9EB46215EFC8E006120F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAB9EB0E215EFC8C006120F9 /* Project object */;
+}
