@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import RealmSwift
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var taxValue: UILabel!
@@ -16,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("View Loaded");
-
+        self.APICall();
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -49,6 +52,29 @@ class ViewController: UIViewController {
             let taxableValue:Double = income - 180000;
             return taxableValue * 0.45 + 54097;
         }
+    }
+    
+    func APICall() {
+        let realm = try! Realm();
+        Alamofire.request("https://xstudio.com.au/incometax.php").responseJSON { response in
+            let incomeTax = response.result.value as! NSDictionary ;
+            print("Tie1: \(String(describing: incomeTax.object(forKey: "tie1")))" );
+            let tie1data = incomeTax.object(forKey: "tie1") as! NSDictionary;
+            let tie1 = TaxTier();
+            tie1.cap = tie1data.value(forKey: "cap") as! Double;
+            tie1.rate = tie1data.value(forKey: "rate") as! Double;
+            tie1.threshold = tie1data.value(forKey: "threshold") as! Int;
+            try! realm.write {
+                realm.deleteAll()
+            }
+            try! realm.write {
+                realm.add(tie1)
+            }
+            let taxTiers = realm.objects(TaxTier.self)
+            debugPrint(taxTiers)
+            
+        }
+        
     }
 
 }
