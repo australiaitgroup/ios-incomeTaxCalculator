@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D31653FA020AC8ABD7625DF /* Pods_IncomeTaxCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */; };
 		AA4251432168423A00B1A333 /* TaxTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4251422168423A00B1A333 /* TaxTier.swift */; };
+		AA7E7E67217AA8F400E52440 /* TaxReturnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */; };
 		AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */; };
 		AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB1B215EFC8C006120F9 /* ViewController.swift */; };
 		AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB20215EFC8E006120F9 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		AA4251452168450200B1A333 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		AA4251462168459900B1A333 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AA4251472168459A00B1A333 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewController.swift; sourceTree = "<group>"; };
 		AAB9EB16215EFC8C006120F9 /* IncomeTaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncomeTaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAB9EB1B215EFC8C006120F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */,
 				AAB9EB25215EFC8E006120F9 /* Info.plist */,
 				AA4251422168423A00B1A333 /* TaxTier.swift */,
+				AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */,
+				AA7E7E67217AA8F400E52440 /* TaxReturnTableViewController.swift in Sources */,
 				AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */,
 				AA4251432168423A00B1A333 /* TaxTier.swift in Sources */,
 			);
