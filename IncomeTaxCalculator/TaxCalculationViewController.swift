@@ -31,6 +31,8 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonSelectPeriod03: UIButton!
     @IBOutlet weak var buttonSelectPeriod04: UIButton!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -60,15 +62,17 @@ class TaxCalculationViewController: UIViewController {
   
         self.buttonSelect00.layer.borderColor = UIColor.white.cgColor
         self.buttonSelect00.layer.borderWidth = 1.7
-        self.buttonSelect01.layer.borderColor = UIColor.white.cgColor
-        self.buttonSelect01.layer.borderWidth = 1
-        self.buttonSelect02.layer.borderColor = UIColor.white.cgColor
-        self.buttonSelect02.layer.borderWidth = 1
-        self.buttonSelect03.layer.borderColor = UIColor.white.cgColor
-        self.buttonSelect03.layer.borderWidth = 1
-        self.buttonSelect04.layer.borderColor = UIColor.white.cgColor
-        self.buttonSelect04.layer.borderWidth = 1
+//        self.buttonSelect01.layer.borderColor = UIColor.white.cgColor
+//        self.buttonSelect01.layer.borderWidth = 1
+//        self.buttonSelect02.layer.borderColor = UIColor.white.cgColor
+//        self.buttonSelect02.layer.borderWidth = 1
+//        self.buttonSelect03.layer.borderColor = UIColor.white.cgColor
+//        self.buttonSelect03.layer.borderWidth = 1
+//        self.buttonSelect04.layer.borderColor = UIColor.white.cgColor
+//        self.buttonSelect04.layer.borderWidth = 1
         
+        self.buttonSelectPeriod00.layer.borderColor = UIColor.white.cgColor
+        self.buttonSelectPeriod00.layer.borderWidth = 1.7
         labelUnderLine.isHidden = true
         
   
@@ -111,7 +115,20 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
-        buttonSelectPeriod00.isHidden = true
+        //buttonSelectPeriod00.isHidden = true
+
+        if buttonSelect01.isHidden == true && buttonSelect02.isHidden == true && buttonSelect03.isHidden == true && buttonSelect04.isHidden == true
+        {
+            buttonSelectPeriod00.isHidden = false
+        }
+        else if buttonSelect01.isHidden == false && buttonSelect02.isHidden == false && buttonSelect03.isHidden == false && buttonSelect04.isHidden == false
+        {
+            buttonSelectPeriod00.isHidden = true
+        }
+        buttonSelectPeriod01.isHidden = true
+        buttonSelectPeriod02.isHidden = true
+        buttonSelectPeriod03.isHidden = true
+        buttonSelectPeriod04.isHidden = true
     }
     
     //M: Select different VISA buttons
@@ -161,6 +178,7 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
         buttonSelectPeriod00.isHidden = false
+
     }
     
     
@@ -174,8 +192,41 @@ class TaxCalculationViewController: UIViewController {
 
     }
     
-
+    @IBAction func onClickPeriod01(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelectPeriod00.setTitle(title, for: .normal)
+        buttonSelectPeriod01.isHidden = true
+        buttonSelectPeriod02.isHidden = true
+        buttonSelectPeriod03.isHidden = true
+        buttonSelectPeriod04.isHidden = true
+    }
     
+    @IBAction func onClickPeriod02(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelectPeriod00.setTitle(title, for: .normal)
+        buttonSelectPeriod01.isHidden = true
+        buttonSelectPeriod02.isHidden = true
+        buttonSelectPeriod03.isHidden = true
+        buttonSelectPeriod04.isHidden = true
+    }
+    
+    @IBAction func onClickPeriod03(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelectPeriod00.setTitle(title, for: .normal)
+        buttonSelectPeriod01.isHidden = true
+        buttonSelectPeriod02.isHidden = true
+        buttonSelectPeriod03.isHidden = true
+        buttonSelectPeriod04.isHidden = true
+    }
+    
+    @IBAction func onClickPeriod04(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelectPeriod00.setTitle(title, for: .normal)
+        buttonSelectPeriod01.isHidden = true
+        buttonSelectPeriod02.isHidden = true
+        buttonSelectPeriod03.isHidden = true
+        buttonSelectPeriod04.isHidden = true
+    }
     
     
     
