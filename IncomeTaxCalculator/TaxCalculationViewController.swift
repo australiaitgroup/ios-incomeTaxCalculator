@@ -27,10 +27,7 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonSelect04: UIButton!
     
     
-    @IBOutlet weak var buttonSelect0: UIButton!
-    @IBOutlet var buttonSelectionCollection: [UIButton]!
-    
-  
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,10 +55,7 @@ class TaxCalculationViewController: UIViewController {
         self.labelUnderLine.layer.borderColor = UIColor.white.cgColor
         self.labelUnderLine.layer.borderWidth = 1.7
         
-        self.buttonSelect0.layer.borderColor = UIColor.white.cgColor
-        self.buttonSelect0.layer.borderWidth = 1.7
-        
-   
+  
         self.buttonSelect00.layer.borderColor = UIColor.white.cgColor
         self.buttonSelect00.layer.borderWidth = 1.7
         self.buttonSelect01.layer.borderColor = UIColor.white.cgColor
@@ -107,35 +101,58 @@ class TaxCalculationViewController: UIViewController {
     
     
 
-  
 
-    @IBAction func onClickSelect(_ sender: UIButton) {
- 
-        buttonSelectionCollection.forEach{
-            (button) in
-            //button.isHidden = true
-            UIView.animate(withDuration: 0.3, animations:{
-                button.isHidden = !button.isHidden
-            })
-        }
+    //M: click VISA select button, then show all VISA buttons.
+    @IBAction func onClickSelectVISA(_ sender: UIButton) {
+        buttonSelect01.isHidden = !buttonSelect01.isHidden
+        buttonSelect02.isHidden = !buttonSelect02.isHidden
+        buttonSelect03.isHidden = !buttonSelect03.isHidden
+        buttonSelect04.isHidden = !buttonSelect04.isHidden
     }
     
-    @IBAction func onClickSelectLeft(_ sender: UIButton) {
-        
-        UIView.animate(withDuration: 1.6, animations:{
-            self.buttonSelect01.isHidden = !self.buttonSelect01.isHidden
-            self.buttonSelect02.isHidden = !self.buttonSelect02.isHidden
-            self.buttonSelect03.isHidden = !self.buttonSelect03.isHidden
-            self.buttonSelect04.isHidden = !self.buttonSelect04.isHidden
-
-        })
-        
-      
+    //M: Select different VISA buttons
+    //M: VISA1
+    @IBAction func onClickVISA1(_ sender: Any) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelect00.setTitle(title, for: .normal)
+        buttonSelect01.isHidden = !buttonSelect01.isHidden
+        buttonSelect02.isHidden = !buttonSelect02.isHidden
+        buttonSelect03.isHidden = !buttonSelect03.isHidden
+        buttonSelect04.isHidden = !buttonSelect04.isHidden
     }
     
+    //M: VISA2
+    @IBAction func onClickVISA2(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelect00.setTitle(title, for: .normal)
+        buttonSelect01.isHidden = !buttonSelect01.isHidden
+        buttonSelect02.isHidden = !buttonSelect02.isHidden
+        buttonSelect03.isHidden = !buttonSelect03.isHidden
+        buttonSelect04.isHidden = !buttonSelect04.isHidden
+    }
+    
+    //M: VISA3
+    @IBAction func onClickVISA3(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelect00.setTitle(title, for: .normal)
+        buttonSelect01.isHidden = !buttonSelect01.isHidden
+        buttonSelect02.isHidden = !buttonSelect02.isHidden
+        buttonSelect03.isHidden = !buttonSelect03.isHidden
+        buttonSelect04.isHidden = !buttonSelect04.isHidden
+    }
+    
+    //M: VISA4
+    @IBAction func onClickVISA4(_ sender: UIButton) {
+        let title:String = (sender as AnyObject).titleLabel!.text!
+        buttonSelect00.setTitle(title, for: .normal)
+        buttonSelect01.isHidden = !buttonSelect01.isHidden
+        buttonSelect02.isHidden = !buttonSelect02.isHidden
+        buttonSelect03.isHidden = !buttonSelect03.isHidden
+        buttonSelect04.isHidden = !buttonSelect04.isHidden
+    }
     
     //M: click Calculator button
-    @IBAction func onClickted(_ sender: UIButton) {
+    @IBAction func onClickCalculate(_ sender: UIButton) {
         let incomeText:String = String(label1.text!);
          let income: NSNumber = NSNumber(value: Float(incomeText)!);
         let tax:Double = Double(truncating: self.calculateTax(income: income));

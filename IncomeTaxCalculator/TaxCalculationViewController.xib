@@ -15,7 +15,6 @@
                 <outlet property="button1" destination="mSQ-zc-aja" id="qxn-SO-Gbb"/>
                 <outlet property="buttonAdd1" destination="uWi-fB-f0J" id="xGB-Ch-kWY"/>
                 <outlet property="buttonAdd2" destination="wmb-c5-2vy" id="vKM-Jv-v6K"/>
-                <outlet property="buttonSelect0" destination="bQl-uh-1Wl" id="ajE-Lp-aE5"/>
                 <outlet property="buttonSelect00" destination="RfC-bL-GBU" id="TTz-DU-Zc8"/>
                 <outlet property="buttonSelect01" destination="WAO-Zz-ORP" id="q6e-JH-arI"/>
                 <outlet property="buttonSelect02" destination="kWs-jn-oxC" id="uVT-U2-e1r"/>
@@ -28,10 +27,6 @@
                 <outlet property="labelResult" destination="Uzq-FN-Ptz" id="CQV-PK-jP4"/>
                 <outlet property="labelUnderLine" destination="uqj-B0-QUX" id="rCZ-3B-x6S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outletCollection property="buttonSelectionCollection" destination="sFa-oJ-v0S" collectionClass="NSMutableArray" id="wT5-pr-esr"/>
-                <outletCollection property="buttonSelectionCollection" destination="Zwj-QE-5q1" collectionClass="NSMutableArray" id="Dyf-9X-odm"/>
-                <outletCollection property="buttonSelectionCollection" destination="vb7-Xy-3Rd" collectionClass="NSMutableArray" id="Aqa-bG-ejR"/>
-                <outletCollection property="buttonSelectionCollection" destination="RBz-Gv-MDC" collectionClass="NSMutableArray" id="jxs-Yw-s21"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -104,10 +99,10 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="onClickted:" destination="-1" eventType="touchUpInside" id="7WX-Db-d9K"/>
+                        <action selector="onClickCalculate:" destination="-1" eventType="touchUpInside" id="7WX-Db-d9K"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVW-Eg-UgB">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVW-Eg-UgB">
                     <rect key="frame" x="48.5" y="215" width="56.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,62 +147,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VAm-pO-NGS">
-                    <rect key="frame" x="218" y="537" width="225" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-uh-1Wl">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="225" id="7nN-8S-Eec"/>
-                                <constraint firstAttribute="height" constant="34" id="u92-Ja-q69"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="Select">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <connections>
-                                <action selector="onClickSelect:" destination="-1" eventType="touchUpInside" id="2Lv-H9-gOs"/>
-                            </connections>
-                        </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFa-oJ-v0S">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
-                            <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="34" id="05i-RG-VD5"/>
-                                <constraint firstAttribute="width" constant="225" id="kez-L5-qS7"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="Weekly">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwj-QE-5q1">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
-                            <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="34" id="e9l-9r-ztX"/>
-                                <constraint firstAttribute="width" constant="225" id="ivd-dw-wPo"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="Fornightly">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-Xy-3Rd">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
-                            <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="34" id="qId-sI-9hX"/>
-                                <constraint firstAttribute="width" constant="225" id="xUX-uo-mBf"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <state key="normal" title="Monthly">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                        </button>
-                    </subviews>
-                </stackView>
                 <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfC-bL-GBU">
                     <rect key="frame" x="136" y="208" width="225" height="35"/>
                     <constraints>
@@ -219,10 +158,10 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="onClickSelectLeft:" destination="-1" eventType="touchUpInside" id="K4d-RK-bqL"/>
+                        <action selector="onClickSelectVISA:" destination="-1" eventType="touchUpInside" id="K4d-RK-bqL"/>
                     </connections>
                 </button>
-                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAO-Zz-ORP">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAO-Zz-ORP">
                     <rect key="frame" x="136" y="243" width="225" height="35"/>
                     <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -230,11 +169,14 @@
                         <constraint firstAttribute="width" constant="225" id="AE8-Z3-Ouc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Weekly">
+                    <state key="normal" title="VISA1">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="onClickVISA1:" destination="-1" eventType="touchUpInside" id="f7S-jY-Ruh"/>
+                    </connections>
                 </button>
-                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWs-jn-oxC">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWs-jn-oxC">
                     <rect key="frame" x="136" y="278" width="225" height="34"/>
                     <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -242,11 +184,14 @@
                         <constraint firstAttribute="height" constant="34" id="oIc-Im-ctY"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Fornightly">
+                    <state key="normal" title="VISA2">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="onClickVISA2:" destination="-1" eventType="touchUpInside" id="AKG-C9-BHG"/>
+                    </connections>
                 </button>
-                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpE-Xq-b8z">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpE-Xq-b8z">
                     <rect key="frame" x="136" y="312" width="225" height="34"/>
                     <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -254,11 +199,14 @@
                         <constraint firstAttribute="width" constant="225" id="GTJ-6f-BWk"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Monthly">
+                    <state key="normal" title="VISA3">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="onClickVISA3:" destination="-1" eventType="touchUpInside" id="m34-aL-twH"/>
+                    </connections>
                 </button>
-                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-Kd-rZX">
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-Kd-rZX">
                     <rect key="frame" x="136" y="346" width="225" height="34"/>
                     <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -266,21 +214,12 @@
                         <constraint firstAttribute="width" constant="225" id="ubu-Rb-c2v"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Yearly">
+                    <state key="normal" title="VISA4">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                </button>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBz-Gv-MDC">
-                    <rect key="frame" x="-118" y="609" width="225" height="34"/>
-                    <color key="backgroundColor" red="1" green="0.66643245100000004" blue="0.23395081710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="34" id="EwJ-Ay-Bvr"/>
-                        <constraint firstAttribute="width" constant="225" id="iBD-Qj-4xw"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Yearly">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
+                    <connections>
+                        <action selector="onClickVISA4:" destination="-1" eventType="touchUpInside" id="CFS-q4-25x"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
