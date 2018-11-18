@@ -19,15 +19,17 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonAdd2: UIButton!
     @IBOutlet weak var labelUnderLine: UITextField!
     
-   
     @IBOutlet weak var buttonSelect00: UIButton!
     @IBOutlet weak var buttonSelect01: UIButton!
     @IBOutlet weak var buttonSelect02: UIButton!
     @IBOutlet weak var buttonSelect03: UIButton!
     @IBOutlet weak var buttonSelect04: UIButton!
     
-    
- 
+    @IBOutlet weak var buttonSelectPeriod00: UIButton!
+    @IBOutlet weak var buttonSelectPeriod01: UIButton!
+    @IBOutlet weak var buttonSelectPeriod02: UIButton!
+    @IBOutlet weak var buttonSelectPeriod03: UIButton!
+    @IBOutlet weak var buttonSelectPeriod04: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +110,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect02.isHidden = !buttonSelect02.isHidden
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
+        
+        buttonSelectPeriod00.isHidden = true
     }
     
     //M: Select different VISA buttons
@@ -119,6 +123,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect02.isHidden = !buttonSelect02.isHidden
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
+        
+        buttonSelectPeriod00.isHidden = false
     }
     
     //M: VISA2
@@ -129,6 +135,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect02.isHidden = !buttonSelect02.isHidden
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
+        
+        buttonSelectPeriod00.isHidden = false
     }
     
     //M: VISA3
@@ -139,6 +147,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect02.isHidden = !buttonSelect02.isHidden
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
+        
+        buttonSelectPeriod00.isHidden = false
     }
     
     //M: VISA4
@@ -149,7 +159,26 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect02.isHidden = !buttonSelect02.isHidden
         buttonSelect03.isHidden = !buttonSelect03.isHidden
         buttonSelect04.isHidden = !buttonSelect04.isHidden
+        
+        buttonSelectPeriod00.isHidden = false
     }
+    
+    
+    
+    //M: click Period Select button, show all buttons
+    @IBAction func onClickPeriod(_ sender: UIButton) {
+        buttonSelectPeriod01.isHidden = !buttonSelectPeriod01.isHidden
+        buttonSelectPeriod02.isHidden = !buttonSelectPeriod02.isHidden
+        buttonSelectPeriod03.isHidden = !buttonSelectPeriod03.isHidden
+        buttonSelectPeriod04.isHidden = !buttonSelectPeriod04.isHidden
+
+    }
+    
+
+    
+    
+    
+    
     
     //M: click Calculator button
     @IBAction func onClickCalculate(_ sender: UIButton) {
