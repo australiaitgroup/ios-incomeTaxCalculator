@@ -110,7 +110,7 @@ class TaxCalculationViewController: UIViewController {
   
 
     @IBAction func onClickSelect(_ sender: UIButton) {
-        labelResult.text = "! right select"
+ 
         buttonSelectionCollection.forEach{
             (button) in
             //button.isHidden = true
@@ -121,14 +121,15 @@ class TaxCalculationViewController: UIViewController {
     }
     
     @IBAction func onClickSelectLeft(_ sender: UIButton) {
-        labelResult.text = "! leftselect"
         
-        //UIView.animate(withDuration: 0.3, animations:{
+        UIView.animate(withDuration: 1.6, animations:{
             self.buttonSelect01.isHidden = !self.buttonSelect01.isHidden
             self.buttonSelect02.isHidden = !self.buttonSelect02.isHidden
             self.buttonSelect03.isHidden = !self.buttonSelect03.isHidden
             self.buttonSelect04.isHidden = !self.buttonSelect04.isHidden
-        //})
+
+        })
+        
       
     }
     
