@@ -12,7 +12,6 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var label1: UITextField!
     @IBOutlet weak var label2: UITextField!
     @IBOutlet weak var label3: UITextField!
-    @IBOutlet weak var label4: UITextField!
     @IBOutlet weak var label5DollerSign: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var labelResult: UILabel!
@@ -49,8 +48,7 @@ class TaxCalculationViewController: UIViewController {
         self.label2.layer.borderWidth = 1.7
         self.label3.layer.borderColor = UIColor.white.cgColor
         self.label3.layer.borderWidth = 1.7
-        self.label4.layer.borderColor = UIColor.white.cgColor
-        self.label4.layer.borderWidth = 1.7
+
         self.label5DollerSign.layer.borderColor = UIColor.white.cgColor
         self.label5DollerSign.layer.borderWidth = 1.7
         
