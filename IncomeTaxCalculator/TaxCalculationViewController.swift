@@ -33,7 +33,12 @@ class TaxCalculationViewController: UIViewController {
     
     
     @IBOutlet weak var buttonCheckBox1: UIButton!
+    @IBOutlet weak var buttonCheckBox2: UIButton!
+    @IBOutlet weak var buttonCheckBox3: UIButton!
+    
     var checkBoxClicked: Int = 2
+    var checkBoxClicked2: Int = 2
+    var checkBoxClicked3: Int = 2
 
     
     override func viewDidLoad() {
@@ -122,13 +127,14 @@ class TaxCalculationViewController: UIViewController {
             buttonSelectPeriod00.isHidden = false
             label2.isHidden = false
             label5DollerSign.isHidden = false
+            label3.isHidden = false
         }
         else if buttonSelect01.isHidden == false && buttonSelect02.isHidden == false && buttonSelect03.isHidden == false && buttonSelect04.isHidden == false
         {
             buttonSelectPeriod00.isHidden = true
             label2.isHidden = true
             label5DollerSign.isHidden = true
-            label3.isHidden = true
+            label3.isHidden = false
         }
         buttonSelectPeriod01.isHidden = true
         buttonSelectPeriod02.isHidden = true
@@ -275,10 +281,7 @@ class TaxCalculationViewController: UIViewController {
         label3.isHidden = false
     }
     
-    @IBAction func onClickCheckBox(_ sender: UIButton) {
-       
-        
-        
+    @IBAction func onClickCheckBox1(_ sender: UIButton) {
         if checkBoxClicked % 2 == 0
         {
             let checkedImage: UIImage? = UIImage (named: "checkbox1")
@@ -290,10 +293,35 @@ class TaxCalculationViewController: UIViewController {
             buttonCheckBox1.setBackgroundImage(checkedImage, for: .normal)
             checkBoxClicked = checkBoxClicked + 1
         }
-        
     }
     
+    @IBAction func onClickCheckBox2(_ sender: UIButton) {
+        if checkBoxClicked2 % 2 == 0
+        {
+            let checkedImage: UIImage? = UIImage (named: "checkbox1")
+            buttonCheckBox2.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked2 = checkBoxClicked2 + 1
+        }
+        else{
+            let checkedImage: UIImage? = UIImage (named: "checkbox4")
+            buttonCheckBox2.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked2 = checkBoxClicked2 + 1
+        }
+    }
     
+    @IBAction func onClickCheckBox3(_ sender: UIButton) {
+        if checkBoxClicked3 % 2 == 0
+        {
+            let checkedImage: UIImage? = UIImage (named: "checkbox1")
+            buttonCheckBox3.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked3 = checkBoxClicked3 + 1
+        }
+        else{
+            let checkedImage: UIImage? = UIImage (named: "checkbox4")
+            buttonCheckBox3.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked3 = checkBoxClicked3 + 1
+        }
+    }
     
     //M: click Calculator button
     @IBAction func onClickCalculate(_ sender: UIButton) {

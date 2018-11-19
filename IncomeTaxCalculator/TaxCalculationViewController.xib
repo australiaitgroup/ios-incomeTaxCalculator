@@ -16,6 +16,8 @@
                 <outlet property="buttonAdd1" destination="uWi-fB-f0J" id="xGB-Ch-kWY"/>
                 <outlet property="buttonAdd2" destination="wmb-c5-2vy" id="vKM-Jv-v6K"/>
                 <outlet property="buttonCheckBox1" destination="HrF-KB-Mzk" id="f3y-IW-ocF"/>
+                <outlet property="buttonCheckBox2" destination="Y35-DV-7vz" id="f89-6I-wbk"/>
+                <outlet property="buttonCheckBox3" destination="efV-Ky-i0S" id="Rqg-XD-Z7y"/>
                 <outlet property="buttonSelect00" destination="RfC-bL-GBU" id="TTz-DU-Zc8"/>
                 <outlet property="buttonSelect01" destination="WAO-Zz-ORP" id="q6e-JH-arI"/>
                 <outlet property="buttonSelect02" destination="kWs-jn-oxC" id="uVT-U2-e1r"/>
@@ -324,7 +326,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="onClickCheckBox:" destination="-1" eventType="touchUpInside" id="Bq9-Cd-A9m"/>
+                        <action selector="onClickCheckBox1:" destination="-1" eventType="touchUpInside" id="Bq9-Cd-A9m"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Includes Medicare Levy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiO-cj-lji">
@@ -352,7 +354,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="onClickCheckBox:" destination="-1" eventType="touchUpInside" id="fNr-fC-kYJ"/>
+                        <action selector="onClickCheckBox2:" destination="-1" eventType="touchUpInside" id="aH8-Ta-qsa"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efV-Ky-i0S">
@@ -366,7 +368,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="onClickCheckBox:" destination="-1" eventType="touchUpInside" id="Vg3-WQ-SIK"/>
+                        <action selector="onClickCheckBox3:" destination="-1" eventType="touchUpInside" id="Gbv-Eu-6ZK"/>
                     </connections>
                 </button>
             </subviews>
