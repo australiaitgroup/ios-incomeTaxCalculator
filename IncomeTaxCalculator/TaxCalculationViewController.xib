@@ -371,6 +371,11 @@
                         <action selector="onClickCheckBox3:" destination="-1" eventType="touchUpInside" id="Gbv-Eu-6ZK"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dau-st-HhW">
+                    <rect key="frame" x="344" y="812" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="info.png"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -423,5 +428,6 @@
     </objects>
     <resources>
         <image name="checkbox4.png" width="362" height="382"/>
+        <image name="info.png" width="128" height="128"/>
     </resources>
 </document>
