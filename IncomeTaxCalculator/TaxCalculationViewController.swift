@@ -13,6 +13,7 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var label2: UITextField!
     @IBOutlet weak var label3: UITextField!
     @IBOutlet weak var label4: UITextField!
+    @IBOutlet weak var label5DollerSign: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var buttonAdd1: UIButton!
@@ -31,6 +32,8 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonSelectPeriod03: UIButton!
     @IBOutlet weak var buttonSelectPeriod04: UIButton!
     
+    
+    
 
     
     override func viewDidLoad() {
@@ -47,6 +50,8 @@ class TaxCalculationViewController: UIViewController {
         self.label3.layer.borderWidth = 1.7
         self.label4.layer.borderColor = UIColor.white.cgColor
         self.label4.layer.borderWidth = 1.7
+        self.label5DollerSign.layer.borderColor = UIColor.white.cgColor
+        self.label5DollerSign.layer.borderWidth = 1.7
         
         self.buttonAdd1.layer.borderColor = UIColor.white.cgColor
         self.buttonAdd1.layer.borderWidth = 1.7
@@ -62,18 +67,13 @@ class TaxCalculationViewController: UIViewController {
   
         self.buttonSelect00.layer.borderColor = UIColor.white.cgColor
         self.buttonSelect00.layer.borderWidth = 1.7
-//        self.buttonSelect01.layer.borderColor = UIColor.white.cgColor
-//        self.buttonSelect01.layer.borderWidth = 1
-//        self.buttonSelect02.layer.borderColor = UIColor.white.cgColor
-//        self.buttonSelect02.layer.borderWidth = 1
-//        self.buttonSelect03.layer.borderColor = UIColor.white.cgColor
-//        self.buttonSelect03.layer.borderWidth = 1
-//        self.buttonSelect04.layer.borderColor = UIColor.white.cgColor
-//        self.buttonSelect04.layer.borderWidth = 1
         
         self.buttonSelectPeriod00.layer.borderColor = UIColor.white.cgColor
         self.buttonSelectPeriod00.layer.borderWidth = 1.7
         labelUnderLine.isHidden = true
+        
+        label1.text = "0.00"
+        label2.text = "0.00"
         
   
         
@@ -120,10 +120,14 @@ class TaxCalculationViewController: UIViewController {
         if buttonSelect01.isHidden == true && buttonSelect02.isHidden == true && buttonSelect03.isHidden == true && buttonSelect04.isHidden == true
         {
             buttonSelectPeriod00.isHidden = false
+            label2.isHidden = false
+            label5DollerSign.isHidden = false
         }
         else if buttonSelect01.isHidden == false && buttonSelect02.isHidden == false && buttonSelect03.isHidden == false && buttonSelect04.isHidden == false
         {
             buttonSelectPeriod00.isHidden = true
+            label2.isHidden = true
+            label5DollerSign.isHidden = true
         }
         buttonSelectPeriod01.isHidden = true
         buttonSelectPeriod02.isHidden = true
@@ -142,6 +146,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
         buttonSelectPeriod00.isHidden = false
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     //M: VISA2
@@ -154,6 +160,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
         buttonSelectPeriod00.isHidden = false
+        label2.isHidden = false
+        label5DollerSign.isHidden = true
     }
     
     //M: VISA3
@@ -166,6 +174,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
         buttonSelectPeriod00.isHidden = false
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     //M: VISA4
@@ -178,6 +188,8 @@ class TaxCalculationViewController: UIViewController {
         buttonSelect04.isHidden = !buttonSelect04.isHidden
         
         buttonSelectPeriod00.isHidden = false
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
 
     }
     
@@ -190,6 +202,18 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod03.isHidden = !buttonSelectPeriod03.isHidden
         buttonSelectPeriod04.isHidden = !buttonSelectPeriod04.isHidden
 
+        if buttonSelectPeriod01.isHidden == true && buttonSelectPeriod02.isHidden == true && buttonSelectPeriod03.isHidden == true && buttonSelectPeriod04.isHidden == true
+        {
+            //buttonSelectPeriod00.isHidden = false
+            label2.isHidden = false
+            label5DollerSign.isHidden = false
+        }
+        else if buttonSelectPeriod01.isHidden == false && buttonSelectPeriod02.isHidden == false && buttonSelectPeriod03.isHidden == false && buttonSelectPeriod04.isHidden == false
+        {
+            //buttonSelectPeriod00.isHidden = true
+            label2.isHidden = true
+            label5DollerSign.isHidden = true
+        }
     }
     
     @IBAction func onClickPeriod01(_ sender: UIButton) {
@@ -199,6 +223,9 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod02.isHidden = true
         buttonSelectPeriod03.isHidden = true
         buttonSelectPeriod04.isHidden = true
+        
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     @IBAction func onClickPeriod02(_ sender: UIButton) {
@@ -208,6 +235,9 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod02.isHidden = true
         buttonSelectPeriod03.isHidden = true
         buttonSelectPeriod04.isHidden = true
+        
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     @IBAction func onClickPeriod03(_ sender: UIButton) {
@@ -217,6 +247,9 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod02.isHidden = true
         buttonSelectPeriod03.isHidden = true
         buttonSelectPeriod04.isHidden = true
+        
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     @IBAction func onClickPeriod04(_ sender: UIButton) {
@@ -226,6 +259,9 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod02.isHidden = true
         buttonSelectPeriod03.isHidden = true
         buttonSelectPeriod04.isHidden = true
+        
+        label2.isHidden = false
+        label5DollerSign.isHidden = false
     }
     
     
