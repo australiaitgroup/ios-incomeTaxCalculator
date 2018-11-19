@@ -74,6 +74,7 @@ class TaxCalculationViewController: UIViewController {
         
         label1.text = "0.00"
         label2.text = "0.00"
+        label3.text = "July 2018 - June 2019"
         
   
         
@@ -93,7 +94,7 @@ class TaxCalculationViewController: UIViewController {
     @IBAction func minusIncome(_ sender: UIButton) {
         if label1.text != ""
         {
-            label1.text = String(Int(label1.text!)! - 1)
+            label1.text = String(Double(label1.text!)! - 1)
         }
     }
     
@@ -101,7 +102,7 @@ class TaxCalculationViewController: UIViewController {
     @IBAction func addIncome(_ sender: UIButton) {
         if label1.text != ""
         {
-            label1.text = String(Int(label1.text!)! + 1)
+            label1.text = String(Double(label1.text!)! + 1)
         }
     }
     
@@ -128,6 +129,7 @@ class TaxCalculationViewController: UIViewController {
             buttonSelectPeriod00.isHidden = true
             label2.isHidden = true
             label5DollerSign.isHidden = true
+            label3.isHidden = true
         }
         buttonSelectPeriod01.isHidden = true
         buttonSelectPeriod02.isHidden = true
@@ -148,6 +150,7 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod00.isHidden = false
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     //M: VISA2
@@ -161,7 +164,8 @@ class TaxCalculationViewController: UIViewController {
         
         buttonSelectPeriod00.isHidden = false
         label2.isHidden = false
-        label5DollerSign.isHidden = true
+        label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     //M: VISA3
@@ -176,6 +180,7 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod00.isHidden = false
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     //M: VISA4
@@ -190,6 +195,7 @@ class TaxCalculationViewController: UIViewController {
         buttonSelectPeriod00.isHidden = false
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
 
     }
     
@@ -207,12 +213,14 @@ class TaxCalculationViewController: UIViewController {
             //buttonSelectPeriod00.isHidden = false
             label2.isHidden = false
             label5DollerSign.isHidden = false
+            label3.isHidden = false
         }
         else if buttonSelectPeriod01.isHidden == false && buttonSelectPeriod02.isHidden == false && buttonSelectPeriod03.isHidden == false && buttonSelectPeriod04.isHidden == false
         {
             //buttonSelectPeriod00.isHidden = true
             label2.isHidden = true
             label5DollerSign.isHidden = true
+            label3.isHidden = true
         }
     }
     
@@ -226,6 +234,7 @@ class TaxCalculationViewController: UIViewController {
         
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     @IBAction func onClickPeriod02(_ sender: UIButton) {
@@ -238,6 +247,7 @@ class TaxCalculationViewController: UIViewController {
         
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     @IBAction func onClickPeriod03(_ sender: UIButton) {
@@ -250,6 +260,7 @@ class TaxCalculationViewController: UIViewController {
         
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     @IBAction func onClickPeriod04(_ sender: UIButton) {
@@ -262,6 +273,7 @@ class TaxCalculationViewController: UIViewController {
         
         label2.isHidden = false
         label5DollerSign.isHidden = false
+        label3.isHidden = false
     }
     
     
