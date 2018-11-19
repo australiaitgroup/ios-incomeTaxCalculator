@@ -33,7 +33,8 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonSelectPeriod04: UIButton!
     
     
-    
+    @IBOutlet weak var buttonCheckBox1: UIButton!
+    var checkBoxClicked: Int = 2
 
     
     override func viewDidLoad() {
@@ -80,9 +81,9 @@ class TaxCalculationViewController: UIViewController {
         
         //M: background color (gradient)
         let topColor = UIColor(red: (230 / 255.0), green: (246 / 255.0), blue: (114 / 255.0), alpha: 1)
-        let bottomColor = UIColor(red: (22 / 255.0), green: (127 / 255.0), blue: (126/255.0), alpha: 1)
+        let bottomColor = UIColor(red: (69 / 255.0), green: (156 / 255.0), blue: (156/255.0), alpha: 1)
         let gradientColors: [CGColor] = [topColor.cgColor, bottomColor.cgColor]
-        let gradientLocations: [NSNumber] = [0.0, 0.52]
+        let gradientLocations: [NSNumber] = [0.0, 0.32]
         let gradientLayer: CAGradientLayer = CAGradientLayer()
         gradientLayer.colors = gradientColors
         gradientLayer.locations = gradientLocations
@@ -276,6 +277,23 @@ class TaxCalculationViewController: UIViewController {
         label3.isHidden = false
     }
     
+    @IBAction func onClickCheckBox(_ sender: UIButton) {
+       
+        
+        
+        if checkBoxClicked % 2 == 0
+        {
+            let checkedImage: UIImage? = UIImage (named: "checkbox1")
+            buttonCheckBox1.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked = checkBoxClicked + 1
+        }
+        else{
+            let checkedImage: UIImage? = UIImage (named: "checkbox4")
+            buttonCheckBox1.setBackgroundImage(checkedImage, for: .normal)
+            checkBoxClicked = checkBoxClicked + 1
+        }
+        
+    }
     
     
     

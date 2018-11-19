@@ -15,6 +15,7 @@
                 <outlet property="button1" destination="mSQ-zc-aja" id="qxn-SO-Gbb"/>
                 <outlet property="buttonAdd1" destination="uWi-fB-f0J" id="xGB-Ch-kWY"/>
                 <outlet property="buttonAdd2" destination="wmb-c5-2vy" id="vKM-Jv-v6K"/>
+                <outlet property="buttonCheckBox1" destination="HrF-KB-Mzk" id="f3y-IW-ocF"/>
                 <outlet property="buttonSelect00" destination="RfC-bL-GBU" id="TTz-DU-Zc8"/>
                 <outlet property="buttonSelect01" destination="WAO-Zz-ORP" id="q6e-JH-arI"/>
                 <outlet property="buttonSelect02" destination="kWs-jn-oxC" id="uVT-U2-e1r"/>
@@ -160,7 +161,7 @@
                         <constraint firstAttribute="width" constant="225" id="AE8-Z3-Ouc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Australian Citizens or PR">
+                    <state key="normal" title="Citizen/PR/StudentVISA">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -307,18 +308,33 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-sG-4Hg">
-                    <rect key="frame" x="136" y="502" width="225" height="34"/>
+                    <rect key="frame" x="145" y="592" width="225" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-KB-Mzk">
+                    <rect key="frame" x="31" y="507" width="37" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Gy7-jc-Q9q"/>
+                        <constraint firstAttribute="width" constant="37" id="g80-il-fO4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" backgroundImage="checkbox4.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCheckBox:" destination="-1" eventType="touchUpInside" id="Bq9-Cd-A9m"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gwQ-Ma-toP" firstAttribute="top" secondItem="8cz-AE-Vox" secondAttribute="bottom" constant="37.5" id="1M0-Qp-XQa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Wa-Kd-rZX" secondAttribute="trailing" constant="53" id="2AV-l5-eJP"/>
                 <constraint firstItem="Uzq-FN-Ptz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="2oN-jC-63Q"/>
+                <constraint firstItem="HrF-KB-Mzk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="3mH-Ak-0pK"/>
                 <constraint firstItem="RfC-bL-GBU" firstAttribute="top" secondItem="Uzq-FN-Ptz" secondAttribute="bottom" constant="24" id="6HX-DS-TPx"/>
                 <constraint firstItem="fwL-0a-FeS" firstAttribute="top" secondItem="BJq-HH-q1c" secondAttribute="bottom" id="75Y-Pl-A4T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uzq-FN-Ptz" secondAttribute="trailing" constant="20" id="7gv-P5-Nnd"/>
@@ -346,6 +362,7 @@
                 <constraint firstItem="1Wa-Kd-rZX" firstAttribute="top" secondItem="SpE-Xq-b8z" secondAttribute="bottom" id="gf6-A4-sZp"/>
                 <constraint firstAttribute="trailing" secondItem="uqj-B0-QUX" secondAttribute="trailing" constant="20" id="gyc-jq-Pzp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SpE-Xq-b8z" secondAttribute="trailing" constant="53" id="hCt-w0-gBe"/>
+                <constraint firstItem="HrF-KB-Mzk" firstAttribute="top" secondItem="o6o-3c-Elc" secondAttribute="bottom" constant="37.5" id="hpa-l9-cMD"/>
                 <constraint firstItem="pVW-Eg-UgB" firstAttribute="top" secondItem="Uzq-FN-Ptz" secondAttribute="bottom" constant="31" id="nOj-fM-NAO"/>
                 <constraint firstItem="5uu-Bb-Eo5" firstAttribute="top" secondItem="pVW-Eg-UgB" secondAttribute="bottom" constant="37.5" id="rgI-1P-koH"/>
                 <constraint firstItem="uqj-B0-QUX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="suI-3o-vGI"/>
@@ -357,4 +374,7 @@
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
     </objects>
+    <resources>
+        <image name="checkbox4.png" width="362" height="382"/>
+    </resources>
 </document>
