@@ -480,7 +480,7 @@ class TaxCalculationViewController: UIViewController {
                     }
                     else if taxAbleValue >= 180001
                     {
-                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097) 
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097)
                     }
                 }
         
@@ -507,22 +507,71 @@ class TaxCalculationViewController: UIViewController {
                 if buttonSelectPeriod00.titleLabel!.text! == "Weekly"
                 {
                     let taxAbleValue: Double = (income * 52 - deduction) /// 52
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 87000
+                    {
+                        finalTax = taxAbleValue * 0.325 / 52
+                    }
+                    else if taxAbleValue >= 87001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 87000) * 0.37 + 28275) / 52
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 62685) / 52
+                    }
                 }
+                
+                
                 else if buttonSelectPeriod00.titleLabel!.text! == "Fornightly"
                 {
                     let taxAbleValue: Double = (income * 26 - deduction) /// 26
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 87000
+                    {
+                        finalTax = taxAbleValue * 0.325 / 26
+                    }
+                    else if taxAbleValue >= 87001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 87000) * 0.37 + 28275) / 26
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 62685) / 26
+                    }
                 }
                 else if buttonSelectPeriod00.titleLabel!.text! == "Monthly"
                 {
                     let taxAbleValue: Double = (income * 12 - deduction) /// 12
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 87000
+                    {
+                        finalTax = taxAbleValue * 0.325 / 12
+                    }
+                    else if taxAbleValue >= 87001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 87000) * 0.37 + 28275) / 12
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 62685) / 12
+                    }
                 }
                 else if buttonSelectPeriod00.titleLabel!.text! == "Yearly"
                 {
                     let taxAbleValue: Double = income - deduction
-                    finalTax = taxAbleValue * 0.3
+                    if taxAbleValue >= 0 && taxAbleValue <= 87000
+                    {
+                        finalTax = taxAbleValue * 0.325
+                    }
+                    else if taxAbleValue >= 87001 && taxAbleValue <= 180000
+                    {
+                        finalTax = (taxAbleValue - 87000) * 0.37 + 28275
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 62685)
+                    }
                 }
             }
                 //M: user doesnt have TFN
@@ -545,22 +594,86 @@ class TaxCalculationViewController: UIViewController {
                 if buttonSelectPeriod00.titleLabel!.text! == "Weekly"
                 {
                     let taxAbleValue: Double = (income * 52 - deduction) /// 52
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 37000
+                    {
+                        finalTax = taxAbleValue * 0.15 / 52
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 5550) / 52
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 22775) / 52
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 56075) / 52
+                    }
                 }
                 else if buttonSelectPeriod00.titleLabel!.text! == "Fornightly"
                 {
                     let taxAbleValue: Double = (income * 26 - deduction) /// 26
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 37000
+                    {
+                        finalTax = taxAbleValue * 0.15 / 26
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 5550) / 26
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 22775) / 26
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 56075) / 26
+                    }
                 }
                 else if buttonSelectPeriod00.titleLabel!.text! == "Monthly"
                 {
                     let taxAbleValue: Double = (income * 12 - deduction) /// 82812
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 37000
+                    {
+                        finalTax = taxAbleValue * 0.15 / 12
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 5550) / 12
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 22775) / 12
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 56075) / 12
+                    }
                 }
                 else if buttonSelectPeriod00.titleLabel!.text! == "Yearly"
                 {
                     let taxAbleValue: Double = income - deduction
-                    finalTax = taxAbleValue * 0.3
+                    
+                    if taxAbleValue >= 0 && taxAbleValue <= 37000
+                    {
+                        finalTax = taxAbleValue * 0.15
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = (taxAbleValue - 37000) * 0.325 + 5550
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 22775)
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 56075)
+                    }
                 }
             }
                 //M: user doesnt have TFN
