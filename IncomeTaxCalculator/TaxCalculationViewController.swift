@@ -105,6 +105,7 @@ class TaxCalculationViewController: UIViewController {
         if label1.text != ""
         {
             label1.text = String(Double(label1.text!)! - 1)
+            income = income - 1
         }
     }
     
@@ -113,6 +114,7 @@ class TaxCalculationViewController: UIViewController {
         if label1.text != ""
         {
             label1.text = String(Double(label1.text!)! + 1)
+            income = income + 1
         }
     }
     
@@ -382,11 +384,106 @@ class TaxCalculationViewController: UIViewController {
             if  checkBoxClicked % 2 != 0
             {
                 print("You clicked checkBox1")
-                
-                
-                //M: has TFN. so the taxAble value can minus deduction
-                let taxAbleValue: Double = income - deduction
-                finalTax = taxAbleValue * 0.3
+                //M: time to calculate duration
+                if buttonSelectPeriod00.titleLabel!.text! == "Weekly"
+                {
+                   let taxAbleValue: Double = (income * 52 - deduction)  /// 52
+                    if taxAbleValue >= 0 && taxAbleValue <= 18200
+                    {
+                        finalTax = 0
+                    }
+                    else if taxAbleValue >= 18201 && taxAbleValue <= 37000
+                    {
+                        finalTax = (taxAbleValue - 18200) * 0.19 / 52
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 3572) / 52
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 20797) / 52
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097) / 52
+                    }
+                    
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Fornightly"
+                {
+                    let taxAbleValue: Double = (income * 26 - deduction)  /// 26
+                    if taxAbleValue >= 0 && taxAbleValue <= 18200
+                    {
+                        finalTax = 0
+                    }
+                    else if taxAbleValue >= 18201 && taxAbleValue <= 37000
+                    {
+                        finalTax = (taxAbleValue - 18200) * 0.19 / 26
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 3572) / 26
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 20797) / 26
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097) / 26
+                    }
+                   
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Monthly"
+                {
+                    let taxAbleValue: Double = (income * 12 - deduction) /// 12
+                    if taxAbleValue >= 0 && taxAbleValue <= 18200
+                    {
+                        finalTax = 0
+                    }
+                    else if taxAbleValue >= 18201 && taxAbleValue <= 37000
+                    {
+                        finalTax = (taxAbleValue - 18200) * 0.19 / 12
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 3572) / 12
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 20797) / 12
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097) / 12
+                    }
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Yearly"
+                {
+                    let taxAbleValue: Double = income - deduction
+                    if taxAbleValue >= 0 && taxAbleValue <= 18200
+                    {
+                        finalTax = 0
+                    }
+                    else if taxAbleValue >= 18201 && taxAbleValue <= 37000
+                    {
+                        finalTax = (taxAbleValue - 18200) * 0.19
+                    }
+                    else if taxAbleValue >= 37001 && taxAbleValue <= 90000
+                    {
+                        finalTax = ((taxAbleValue - 37000) * 0.325 + 3572)
+                    }
+                    else if taxAbleValue >= 90001 && taxAbleValue <= 180000
+                    {
+                        finalTax = ((taxAbleValue - 90000) * 0.37 + 20797)
+                    }
+                    else if taxAbleValue >= 180001
+                    {
+                        finalTax = ((taxAbleValue - 180000) * 0.45 + 54097) 
+                    }
+                }
+        
             }
                 
             //M: no TFN, deduction should not influence
@@ -394,6 +491,7 @@ class TaxCalculationViewController: UIViewController {
             else if checkBoxClicked % 2 == 0
             {
                 print("You unclicked checkBox1")
+                deduction = 0
                 let taxAbleValue: Double = income - deduction
                 finalTax = taxAbleValue * 0.47
             }
@@ -406,12 +504,33 @@ class TaxCalculationViewController: UIViewController {
             if  checkBoxClicked % 2 != 0
             {
                 print("You clicked checkBox1")
+                if buttonSelectPeriod00.titleLabel!.text! == "Weekly"
+                {
+                    let taxAbleValue: Double = (income * 52 - deduction) /// 52
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Fornightly"
+                {
+                    let taxAbleValue: Double = (income * 26 - deduction) /// 26
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Monthly"
+                {
+                    let taxAbleValue: Double = (income * 12 - deduction) /// 12
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Yearly"
+                {
+                    let taxAbleValue: Double = income - deduction
+                    finalTax = taxAbleValue * 0.3
+                }
             }
                 //M: user doesnt have TFN
                 //M: finished!!!
             else if checkBoxClicked % 2 == 0
             {
                 print("You unclicked checkBox1")
+                deduction = 0
                 let taxAbleValue: Double = income - deduction
                 finalTax = taxAbleValue * 0.45
             }
@@ -423,12 +542,33 @@ class TaxCalculationViewController: UIViewController {
             if  checkBoxClicked % 2 != 0
             {
                 print("You clicked checkBox1")
+                if buttonSelectPeriod00.titleLabel!.text! == "Weekly"
+                {
+                    let taxAbleValue: Double = (income * 52 - deduction) /// 52
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Fornightly"
+                {
+                    let taxAbleValue: Double = (income * 26 - deduction) /// 26
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Monthly"
+                {
+                    let taxAbleValue: Double = (income * 12 - deduction) /// 82812
+                    finalTax = taxAbleValue * 0.3
+                }
+                else if buttonSelectPeriod00.titleLabel!.text! == "Yearly"
+                {
+                    let taxAbleValue: Double = income - deduction
+                    finalTax = taxAbleValue * 0.3
+                }
             }
                 //M: user doesnt have TFN
                 //M: finished!!!
             else if checkBoxClicked % 2 == 0
             {
                 print("You unclicked checkBox1")
+                deduction = 0
                 let taxAbleValue: Double = income - deduction
                 finalTax = taxAbleValue * 0.45
             }
