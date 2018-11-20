@@ -81,7 +81,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onClickLabel13:" destination="-1" eventType="editingDidEnd" id="oF5-0Z-w35"/>
+                        <action selector="onClickLable12:" destination="-1" eventType="editingChanged" id="TLS-En-lik"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qiC-Ct-lX1">
                     <rect key="frame" x="136" y="383" width="225" height="35"/>
@@ -162,7 +166,7 @@
                         <constraint firstAttribute="width" constant="225" id="AE8-Z3-Ouc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Citizen/PR/StudentVISA">
+                    <state key="normal" title="Australian Residents">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -177,7 +181,7 @@
                         <constraint firstAttribute="height" constant="34" id="oIc-Im-ctY"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="VISA2">
+                    <state key="normal" title="Foreign Residents">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -192,7 +196,7 @@
                         <constraint firstAttribute="width" constant="225" id="GTJ-6f-BWk"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="VISA3">
+                    <state key="normal" title="Working Holiday">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -207,15 +211,15 @@
                         <constraint firstAttribute="width" constant="225" id="ubu-Rb-c2v"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="VISA4">
+                    <state key="normal" title="Children(under 18)">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
                         <action selector="onClickVISA4:" destination="-1" eventType="touchUpInside" id="CFS-q4-25x"/>
                     </connections>
                 </button>
-                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-vd-iMb">
-                    <rect key="frame" x="136" y="269" width="225" height="35"/>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-vd-iMb">
+                    <rect key="frame" x="136" y="268" width="225" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="225" id="KsO-2I-E4L"/>
                         <constraint firstAttribute="height" constant="35" id="sij-tS-84x"/>
@@ -293,7 +297,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onClickLabe31:" destination="-1" eventType="editingDidEnd" id="nZn-Lm-1hW"/>
+                        <action selector="onClickLable32:" destination="-1" eventType="editingChanged" id="inl-y7-vOf"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-RB-dS7">
                     <rect key="frame" x="136" y="325" width="37" height="35"/>
@@ -371,9 +379,12 @@
                         <action selector="onClickCheckBox3:" destination="-1" eventType="touchUpInside" id="Gbv-Eu-6ZK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dau-st-HhW">
-                    <rect key="frame" x="344" y="812" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dau-st-HhW">
+                    <rect key="frame" x="333" y="819" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0q5-qU-QiZ"/>
+                        <constraint firstAttribute="height" constant="50" id="ElY-8c-klf"/>
+                    </constraints>
                     <state key="normal" image="info.png"/>
                 </button>
             </subviews>
@@ -398,6 +409,7 @@
                 <constraint firstItem="vUF-WY-liX" firstAttribute="top" secondItem="fwL-0a-FeS" secondAttribute="bottom" id="QXl-PT-qnQ"/>
                 <constraint firstItem="8cz-AE-Vox" firstAttribute="top" secondItem="5uu-Bb-Eo5" secondAttribute="bottom" constant="37.5" id="S7B-17-wxR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kWs-jn-oxC" secondAttribute="trailing" constant="53" id="SEI-b6-SSC"/>
+                <constraint firstAttribute="bottom" secondItem="dau-st-HhW" secondAttribute="bottom" constant="27" id="SqC-gc-Iom"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aRm-vd-iMb" secondAttribute="trailing" constant="53" id="TOa-iI-S5S"/>
                 <constraint firstItem="aRm-vd-iMb" firstAttribute="top" secondItem="RfC-bL-GBU" secondAttribute="bottom" constant="25" id="VPU-hP-Fs0"/>
                 <constraint firstItem="5uu-Bb-Eo5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="XY5-gx-Bwp"/>
@@ -417,6 +429,7 @@
                 <constraint firstItem="Y35-DV-7vz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="63" id="rK6-xB-FQr"/>
                 <constraint firstItem="5uu-Bb-Eo5" firstAttribute="top" secondItem="pVW-Eg-UgB" secondAttribute="bottom" constant="37.5" id="rgI-1P-koH"/>
                 <constraint firstItem="uqj-B0-QUX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="suI-3o-vGI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dau-st-HhW" secondAttribute="trailing" constant="31" id="tFQ-sK-9SH"/>
                 <constraint firstItem="o6o-3c-Elc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="tpQ-ro-o0u"/>
                 <constraint firstItem="gwQ-Ma-toP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="uZF-p7-iKt"/>
                 <constraint firstItem="Y35-DV-7vz" firstAttribute="top" secondItem="HrF-KB-Mzk" secondAttribute="bottom" constant="32" id="yBe-Vk-YLu"/>

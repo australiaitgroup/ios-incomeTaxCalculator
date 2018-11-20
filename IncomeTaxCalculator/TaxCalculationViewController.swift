@@ -39,6 +39,12 @@ class TaxCalculationViewController: UIViewController {
     var checkBoxClicked: Int = 2
     var checkBoxClicked2: Int = 2
     var checkBoxClicked3: Int = 2
+    
+    
+    var finalTax: Double = 0.0
+    var deduction: Double = 0.00
+    var income: Double = 0.00
+    
 
     
     override func viewDidLoad() {
@@ -281,6 +287,36 @@ class TaxCalculationViewController: UIViewController {
         label3.isHidden = false
     }
     
+    @IBAction func onClickLable32(_ sender: UITextField) {
+        let deductionText:String = String(label2.text!)
+       
+        if deductionText == ""{
+            deduction = 0.00
+        }
+        else{
+           deduction = Double(deductionText)!
+        }
+    }
+    @IBAction func onClickLabe31(_ sender: UITextField) {
+       label2.text = String(deduction)
+    }
+    
+    
+    @IBAction func onClickLable12(_ sender: UITextField) {
+        let incomeText:String = String(label1.text!)
+        
+        if incomeText == ""{
+            income = 0.00
+        }
+        else{
+            income = Double(incomeText)!
+        }
+    }
+    @IBAction func onClickLabel13(_ sender: UITextField) {
+        label1.text = String(income)
+    }
+    
+    
     @IBAction func onClickCheckBox1(_ sender: UIButton) {
         if checkBoxClicked % 2 == 0
         {
@@ -323,44 +359,109 @@ class TaxCalculationViewController: UIViewController {
         }
     }
     
+    
+    
+    
+    
     //M: click Calculator button
     @IBAction func onClickCalculate(_ sender: UIButton) {
-        let incomeText:String = String(label1.text!);
-         let income: NSNumber = NSNumber(value: Float(incomeText)!);
-        let tax:Double = Double(truncating: self.calculateTax(income: income));
-        labelResult.text = "$ " + String(tax);
+        
+    
         
         //TODO: reserve 2 decimal
+        //TODO: restrict deduction and income to numbers only
+        
+
+
+        
+        if buttonSelect00.titleLabel!.text! == "Australian Residents"
+        {
+            print("You selected VISA1")
+            
+            //M: check user has TFN or not
+            if  checkBoxClicked % 2 != 0
+            {
+                print("You clicked checkBox1")
+                
+                
+                //M: has TFN. so the taxAble value can minus deduction
+                let taxAbleValue: Double = income - deduction
+                finalTax = taxAbleValue * 0.3
+            }
+                
+            //M: no TFN, deduction should not influence
+            //M: finished!!!
+            else if checkBoxClicked % 2 == 0
+            {
+                print("You unclicked checkBox1")
+                let taxAbleValue: Double = income - deduction
+                finalTax = taxAbleValue * 0.47
+            }
+            
+        }
+        else if buttonSelect00.titleLabel!.text! == "Foreign Residents"
+        {
+            print("You selected VISA2")
+            
+            if  checkBoxClicked % 2 != 0
+            {
+                print("You clicked checkBox1")
+            }
+                //M: user doesnt have TFN
+                //M: finished!!!
+            else if checkBoxClicked % 2 == 0
+            {
+                print("You unclicked checkBox1")
+                let taxAbleValue: Double = income - deduction
+                finalTax = taxAbleValue * 0.45
+            }
+        }
+        else if buttonSelect00.titleLabel!.text! == "Working Holiday"
+        {
+            print("You selected VISA3")
+            
+            if  checkBoxClicked % 2 != 0
+            {
+                print("You clicked checkBox1")
+            }
+                //M: user doesnt have TFN
+                //M: finished!!!
+            else if checkBoxClicked % 2 == 0
+            {
+                print("You unclicked checkBox1")
+                let taxAbleValue: Double = income - deduction
+                finalTax = taxAbleValue * 0.45
+            }
+        }
+        else if buttonSelect00.titleLabel!.text! == "Children(under 18)"
+        {
+            print("You selected VISA4")
+            
+            if  checkBoxClicked % 2 != 0
+            {
+                print("You clicked checkBox1")
+            }
+            else if checkBoxClicked % 2 == 0
+            {
+                print("You unclicked checkBox1")
+            }
+        }
         
         
         
+        
+        
+        
+        
+        
+        
+        labelResult.text = "$ " + String(finalTax)
         labelUnderLine.isHidden = false
     }
     
     
+
     
     
     
-    
-    
-    
-    
-    
-    func calculateTax(income:NSNumber) -> NSNumber{
-        if(income.doubleValue < 18200){
-            return  NSNumber(value:0);
-        }else if (income.doubleValue < 37000) {
-            let taxableValue:Double = income.doubleValue - 18200;
-            return NSNumber(value:taxableValue * 0.19);
-        }else if(income.doubleValue < 90000){
-            let taxableValue:Double = income.doubleValue - 37000;
-            return NSNumber(value:taxableValue * 0.325 + 3572);
-        }else if(income.doubleValue < 100000){
-            let taxableValue:Double = income.doubleValue - 90000;
-            return NSNumber(value:taxableValue * 0.37 + 20797);
-        }else{
-            let taxableValue:Double = income.doubleValue - 100000;
-            return NSNumber(value:taxableValue * 0.45 + 54097);
-        }
-    }
 }
