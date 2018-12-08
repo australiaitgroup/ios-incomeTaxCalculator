@@ -21,6 +21,7 @@
 		B532A219219FB3EE008BB69A /* TaxCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532A217219FB3EE008BB69A /* TaxCalculationViewController.swift */; };
 		B532A21C219FB406008BB69A /* AppContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532A21A219FB406008BB69A /* AppContributorsViewController.swift */; };
 		B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B532A21B219FB406008BB69A /* AppContributorsViewController.xib */; };
+		B54EDF8321BB564400D941DD /* ContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EDF8221BB564400D941DD /* ContributorsViewController.swift */; };
 		B570BB5F21A93A0C00B50D17 /* ResoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570BB5D21A93A0C00B50D17 /* ResoursesViewController.swift */; };
 		B570BB6021A93A0C00B50D17 /* ResoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B570BB5E21A93A0C00B50D17 /* ResoursesViewController.xib */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		B532A217219FB3EE008BB69A /* TaxCalculationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxCalculationViewController.swift; sourceTree = "<group>"; };
 		B532A21A219FB406008BB69A /* AppContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContributorsViewController.swift; sourceTree = "<group>"; };
 		B532A21B219FB406008BB69A /* AppContributorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContributorsViewController.xib; sourceTree = "<group>"; };
+		B54EDF8221BB564400D941DD /* ContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewController.swift; sourceTree = "<group>"; };
 		B570BB5D21A93A0C00B50D17 /* ResoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResoursesViewController.swift; sourceTree = "<group>"; };
 		B570BB5E21A93A0C00B50D17 /* ResoursesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResoursesViewController.xib; sourceTree = "<group>"; };
 		E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				B532A21B219FB406008BB69A /* AppContributorsViewController.xib */,
 				B570BB5D21A93A0C00B50D17 /* ResoursesViewController.swift */,
 				B570BB5E21A93A0C00B50D17 /* ResoursesViewController.xib */,
+				B54EDF8221BB564400D941DD /* ContributorsViewController.swift */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54EDF8321BB564400D941DD /* ContributorsViewController.swift in Sources */,
 				AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */,
 				AA7E7E67217AA8F400E52440 /* TaxReturnTableViewController.swift in Sources */,
 				B570BB5F21A93A0C00B50D17 /* ResoursesViewController.swift in Sources */,

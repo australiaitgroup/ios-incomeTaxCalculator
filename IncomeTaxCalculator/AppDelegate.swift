@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = TaxCalculationViewController()
-        homeViewController.view.backgroundColor = UIColor.red
+        let homeViewController = AppContributorsViewController()
+        homeViewController.view.backgroundColor = UIColor.white
         window!.rootViewController = homeViewController
         return true
     }
