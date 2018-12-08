@@ -4,7 +4,14 @@
 //
 //  Created by LIN LIU on 17/11/18.
 //  Copyright © 2018 Zhiyu Ding. All rights reserved.
-//
+
+
+
+//TODO
+//crashlytics
+//testFlight
+//language
+//future branch
 
 import UIKit
 
@@ -30,7 +37,6 @@ class TaxCalculationViewController: UIViewController {
     @IBOutlet weak var buttonSelectPeriod02: UIButton!
     @IBOutlet weak var buttonSelectPeriod03: UIButton!
     @IBOutlet weak var buttonSelectPeriod04: UIButton!
-    
     
     @IBOutlet weak var buttonCheckBox1: UIButton!
     @IBOutlet weak var buttonCheckBox2: UIButton!
@@ -373,7 +379,7 @@ class TaxCalculationViewController: UIViewController {
         //TODO: reserve 2 decimal
         //TODO: restrict deduction and income to numbers only
         
-//todo if visa not aus residents, checkboxes unclickable
+        //todo if visa not aus residents, checkboxes unclickable
 
         
         if buttonSelect00.titleLabel!.text! == "Australian Residents"
@@ -991,6 +997,19 @@ class TaxCalculationViewController: UIViewController {
     
 
     
+    @IBAction func onClickButtonInfo(_ sender: UIButton) {
+        let contributorViewController = AppContributorsViewController(nibName:"AppContributorsViewController", bundle: nil)
+        
+        
+
+        
+        
+        UIView.beginAnimations("animation", context: nil)
+        UIView.setAnimationDuration(1.0)
+        self.navigationController!.pushViewController(contributorViewController, animated: false)
+        UIView.setAnimationTransition(UIViewAnimationTransition.flipFromLeft, for: self.navigationController!.view, cache: false)
+        UIView.commitAnimations()
+    }
     
     
 }
