@@ -78,20 +78,21 @@ class AppContributorsViewController: UIViewController {
     }
     
 
+    // This function is used to set up the navigation bar along with two bar button items
     func setNavigationBar(){
         let myNav = UINavigationBar(frame: CGRect(x: 0, y: 30, width: self.view.frame.width, height: 44))
         myNav.barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
         myNav.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         self.view.addSubview(myNav)
-        let cancelItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(Progress.cancel))
-        cancelItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        let backItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(Progress.cancel))
+        backItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        let doneItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: Selector(("More")))
+        let moreItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: Selector(("More")))
         
-        doneItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        moreItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let navigItem: UINavigationItem = UINavigationItem(title: "Contributors")
-        navigItem.rightBarButtonItem = doneItem
-        navigItem.leftBarButtonItem = cancelItem
+        navigItem.rightBarButtonItem = moreItem
+        navigItem.leftBarButtonItem = backItem
         myNav.items = [navigItem]
         
         let top = NSLayoutConstraint(item: myNav, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 50)
