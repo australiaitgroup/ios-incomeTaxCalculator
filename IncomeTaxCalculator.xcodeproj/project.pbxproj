@@ -152,8 +152,8 @@
 				AAB9EB25215EFC8E006120F9 /* Info.plist */,
 				AA4251422168423A00B1A333 /* TaxTier.swift */,
 				AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */,
-				B532A21A219FB406008BB69A /* AppContributorsViewController.swift */,
 				B532A21B219FB406008BB69A /* AppContributorsViewController.xib */,
+				B532A21A219FB406008BB69A /* AppContributorsViewController.swift */,
 				B570BB5D21A93A0C00B50D17 /* ResoursesViewController.swift */,
 				B570BB5E21A93A0C00B50D17 /* ResoursesViewController.xib */,
 				B54EDF8221BB564400D941DD /* ContributorsViewController.swift */,
@@ -191,6 +191,7 @@
 				AAB9EB13215EFC8C006120F9 /* Frameworks */,
 				AAB9EB14215EFC8C006120F9 /* Resources */,
 				54CB2CD21B3D864BA660D7B4 /* [CP] Embed Pods Frameworks */,
+				B54EDF8421BB87B200D941DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -358,6 +359,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B54EDF8421BB87B200D941DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTAGS=\"TODO:|FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" -type f\\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
