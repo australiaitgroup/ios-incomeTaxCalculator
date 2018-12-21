@@ -87,11 +87,11 @@ class AppContributorsViewController: UIViewController {
         let backItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(Progress.cancel))
         backItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        let moreItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: Selector(("More")))
-        
-        moreItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+//        let moreItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: Selector(("More")))
+//
+//        moreItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let navigItem: UINavigationItem = UINavigationItem(title: "Contributors")
-        navigItem.rightBarButtonItem = moreItem
+        //navigItem.rightBarButtonItem = moreItem
         navigItem.leftBarButtonItem = backItem
         myNav.items = [navigItem]
         
