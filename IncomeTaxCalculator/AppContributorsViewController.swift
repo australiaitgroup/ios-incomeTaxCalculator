@@ -17,6 +17,8 @@ class AppContributorsViewController: UIViewController {
     var developerTwo = UILabel(frame: CGRect(x: 16, y: 424, width: 160, height: 35))
     var marketing = UILabel(frame: CGRect(x: 16, y: 596, width: 120, height: 35))
     var coOrdinator = UILabel(frame: CGRect(x: 16, y: 596, width: 160, height: 35))
+    var titleBegin = UILabel(frame: CGRect(x: 16, y: 596, width: 80, height: 35))
+    var titleContent = UILabel(frame: CGRect(x: 16, y: 596, width: 300, height: 35))
     
     var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 29))
     var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 29))
@@ -31,11 +33,11 @@ class AppContributorsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.view.bounds.height)
-        print(self.view.center.y)
-        print(self.view.bounds.midY)
-        print(UIScreen.main.bounds.size)
-        print(UIScreen.main.bounds.size.width)
+//        print(self.view.bounds.height)
+//        print(self.view.center.y)
+//        print(self.view.bounds.midY)
+//        print(UIScreen.main.bounds.size)
+//        print(UIScreen.main.bounds.size.width)
         createGradientLayer()
         setLabels()
         setButtons()
@@ -81,6 +83,18 @@ class AppContributorsViewController: UIViewController {
         coOrdinator.center.x = xCenterPos/2
         coOrdinator.center.y = yCenterPos + distance
         
+        titleBegin.text = "We"
+        titleBegin.font = UIFont(name: "ChalkboardSE-Bold", size: 35)
+        titleBegin.textColor = color
+        titleBegin.center.x = xCenterPos/2.5
+        titleBegin.center.y = yCenterPos - distance * 5
+        
+        titleContent.text = "Build Tax Calculator For You"
+        titleContent.textAlignment = .left
+        titleContent.font = UIFont(name: "ChalkboardSE-Bold", size: 20)
+        titleContent.textColor = color
+        titleContent.center.x = xCenterPos * 1.3
+        titleContent.center.y = yCenterPos - distance * 4.95
        
     
     }
@@ -93,6 +107,8 @@ class AppContributorsViewController: UIViewController {
         self.view.addSubview(developerOne)
         self.view.addSubview(developerTwo)
         self.view.addSubview(coOrdinator)
+        self.view.addSubview(titleBegin)
+        self.view.addSubview(titleContent)
 
         self.view.addSubview(MichealDing)
         self.view.addSubview(CaiYang)
@@ -148,10 +164,18 @@ class AppContributorsViewController: UIViewController {
         returnButton.setImage(#imageLiteral(resourceName: "ButtonImage.png"), for: .normal)
         returnButton.center.x = xCenterPos * 1.45
         returnButton.center.y = yCenterPos + distance * (4 * distance / 60)
+        returnButton.addTarget(self, action: #selector(returnButtonTouched), for: .touchUpInside)
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        UIApplication.shared.openURL(URL(string: "https://www.google.com")!)
+        UIApplication.shared.open(URL(string: "https://github.com/australiaitgroup/ios-incomeTaxCalculator")!)
+    }
+    
+    @objc func returnButtonTouched(sender: UIButton!) {
+        let calculationViewController = TaxCalculationViewController(nibName:"TaxCalculationViewController", bundle: nil)
+ 
+        present(calculationViewController, animated: true, completion: nil)
+
     }
 
     func createGradientLayer() {
@@ -166,7 +190,7 @@ class AppContributorsViewController: UIViewController {
         
         gradientLayer.colors = [startColor, endColor]
         gradientLayer.startPoint = CGPoint(x: 0.6, y: 0.05)
-        gradientLayer.endPoint = CGPoint(x: 0.1, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 0.4, y: 1)
         gradientLayer.locations = [0.8,1]
         self.view.layer.addSublayer(gradientLayer)
     }
