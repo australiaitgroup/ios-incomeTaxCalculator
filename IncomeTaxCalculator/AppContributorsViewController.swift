@@ -62,7 +62,7 @@ class AppContributorsViewController: UIViewController {
         developerOne.text = "Developer"
         developerOne.font = titleFont
         developerOne.textColor = color
-        developerOne.center.x = xCenterPos/2
+        developerOne.center.x = xCenterPos/1.8
         developerOne.center.y = yCenterPos - distance * 3
        
         developerTwo.text = "Developer"
@@ -129,7 +129,7 @@ class AppContributorsViewController: UIViewController {
         MichealLinLiu.setTitle("Micheal Lin Liu", for: .normal)
         MichealLinLiu.setTitleColor(color, for: .normal)
         MichealLinLiu.titleLabel?.font = contentFont
-        MichealLinLiu.center.x = xCenterPos * 1.3
+        MichealLinLiu.center.x = xCenterPos * 1.45
         MichealLinLiu.center.y = yCenterPos - distance * 3
         MichealLinLiu.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
