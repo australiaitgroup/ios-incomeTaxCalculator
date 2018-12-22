@@ -22,6 +22,7 @@
 		B532A21C219FB406008BB69A /* AppContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532A21A219FB406008BB69A /* AppContributorsViewController.swift */; };
 		B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B532A21B219FB406008BB69A /* AppContributorsViewController.xib */; };
 		B5523EB621CCA15400DB6D5E /* ButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5523EB521CCA15400DB6D5E /* ButtonImage.png */; };
+		B5523EDC21CDCAF700DB6D5E /* Wave3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5523EDB21CDCAF600DB6D5E /* Wave3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B532A21A219FB406008BB69A /* AppContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContributorsViewController.swift; sourceTree = "<group>"; };
 		B532A21B219FB406008BB69A /* AppContributorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContributorsViewController.xib; sourceTree = "<group>"; };
 		B5523EB521CCA15400DB6D5E /* ButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonImage.png; path = ../../ButtonImage.png; sourceTree = "<group>"; };
+		B5523EDB21CDCAF600DB6D5E /* Wave3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Wave3.jpg; path = ../../Wave3.jpg; sourceTree = "<group>"; };
 		E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				B532A21B219FB406008BB69A /* AppContributorsViewController.xib */,
 				B532A21A219FB406008BB69A /* AppContributorsViewController.swift */,
 				B5523EB521CCA15400DB6D5E /* ButtonImage.png */,
+				B5523EDB21CDCAF600DB6D5E /* Wave3.jpg */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */,
 				B5523EB621CCA15400DB6D5E /* ButtonImage.png in Resources */,
 				AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */,
+				B5523EDC21CDCAF700DB6D5E /* Wave3.jpg in Resources */,
 				AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

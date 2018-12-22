@@ -42,6 +42,7 @@ class AppContributorsViewController: UIViewController {
         setLabels()
         setButtons()
         addLabelsAndButtons()
+        animateBackground()
 
     }
 
@@ -194,4 +195,40 @@ class AppContributorsViewController: UIViewController {
         gradientLayer.locations = [0.8,1]
         self.view.layer.addSublayer(gradientLayer)
     }
+    
+    
+    
+   
+    
+    func animateBackground() {
+        
+        let frame = UIScreen.main.bounds
+        let distance = UIScreen.main.bounds.size.height / 15
+        
+        let xCenterPos = UIScreen.main.bounds.size.width/2
+        let yCenterPos = UIScreen.main.bounds.size.height/2
+        
+        let animationOptions = UIView.AnimationOptions.repeat.rawValue | UIView.AnimationOptions.curveLinear.rawValue
+        let backgroundImage = UIImage(named:"Wave3.jpg")!
+        let amountToKeepImageSquare = backgroundImage.size.height - frame.size.height
+        
+        // UIImageView 1
+        // Change the y value to move down
+        let backgroundImageView1 = UIImageView(image: #imageLiteral(resourceName: "ButtonImage.png"))
+        //backgroundImageView1.alpha = 0 // set the opacity
+        backgroundImageView1.frame = CGRect(x: frame.origin.x, y: yCenterPos + distance*6, width: backgroundImage.size.width - amountToKeepImageSquare, height: frame.size.height/8)
+        self.view.addSubview(backgroundImageView1)
+        
+        // UIImageView 2
+        let backgroundImageView2 = UIImageView(image: #imageLiteral(resourceName: "ButtonImage.png"))
+        backgroundImageView2.frame = CGRect(x: backgroundImageView1.frame.size.width, y: yCenterPos+distance*6,  width: backgroundImage.size.width - amountToKeepImageSquare, height: frame.size.height/8)
+        self.view.addSubview(backgroundImageView2)
+        
+        // Animate background
+        UIView.animate(withDuration: 6.0, delay: 0.0, options: UIView.AnimationOptions(rawValue: animationOptions), animations: {
+            backgroundImageView1.frame = backgroundImageView1.frame.offsetBy(dx: -1 * backgroundImageView1.frame.size.width , dy: 0.0) // dy is used to controll the image move up and down
+            backgroundImageView2.frame = backgroundImageView2.frame.offsetBy(dx: -1 * backgroundImageView2.frame.size.width, dy: 0.0)
+        }, completion: nil)
+    }
+
 }
