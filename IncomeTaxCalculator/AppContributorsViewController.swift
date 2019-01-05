@@ -42,7 +42,7 @@ class AppContributorsViewController: UIViewController {
         setLabels()
         setButtons()
         addLabelsAndButtons()
-        animateBackground()
+        //animateBackground()
         //animateBackground2()
     }
 
