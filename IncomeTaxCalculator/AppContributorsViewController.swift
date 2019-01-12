@@ -20,11 +20,11 @@ class AppContributorsViewController: UIViewController {
     var titleBegin = UILabel(frame: CGRect(x: 16, y: 596, width: 80, height: 35))
     var titleContent = UILabel(frame: CGRect(x: 16, y: 596, width: 300, height: 35))
     
-    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 29))
-    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 29))
-    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 130, height: 29))
-    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 130, height: 29))
-    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 29))
+    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
+    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
+    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
+    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
+    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
     var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     
     let titleFont = UIFont(name: "ChalkboardSE-Bold", size: 25)
@@ -85,14 +85,14 @@ class AppContributorsViewController: UIViewController {
         coOrdinator.center.y = yCenterPos + distance
         
         titleBegin.text = "We"
-        titleBegin.font = UIFont(name: "ChalkboardSE-Bold", size: 35)
+        titleBegin.font = UIFont.boldSystemFont(ofSize: 35)
         titleBegin.textColor = color
         titleBegin.center.x = xCenterPos/2.5
         titleBegin.center.y = yCenterPos - distance * 5
         
         titleContent.text = "Build Tax Calculator For You"
         titleContent.textAlignment = .left
-        titleContent.font = UIFont(name: "ChalkboardSE-Bold", size: 20)
+        titleContent.font = UIFont.systemFont(ofSize: 20)
         titleContent.textColor = color
         titleContent.center.x = xCenterPos * 1.3
         titleContent.center.y = yCenterPos - distance * 4.95
@@ -103,11 +103,11 @@ class AppContributorsViewController: UIViewController {
     // This function is used to add all the labels to the current view
     func addLabelsAndButtons(){
         
-        self.view.addSubview(marketing)
-        self.view.addSubview(designer)
-        self.view.addSubview(developerOne)
-        self.view.addSubview(developerTwo)
-        self.view.addSubview(coOrdinator)
+//        self.view.addSubview(marketing)
+//        self.view.addSubview(designer)
+//        self.view.addSubview(developerOne)
+//        self.view.addSubview(developerTwo)
+//        self.view.addSubview(coOrdinator)
         self.view.addSubview(titleBegin)
         self.view.addSubview(titleContent)
 
@@ -127,38 +127,68 @@ class AppContributorsViewController: UIViewController {
         let yCenterPos = UIScreen.main.bounds.size.height/2
 //        let distance = self.view.bounds.height / 15
         
-        MichealLinLiu.setTitle("Micheal Lin Liu", for: .normal)
+        //MichealLinLiu.setTitle("Micheal Lin Liu", for: .normal)
+        setMultipleFonts(button: MichealLinLiu, title: "Developer  ", name: "Micheal Lin Liu")
+        MichealLinLiu.titleLabel?.baselineAdjustment = .alignCenters
+        MichealLinLiu.layer.cornerRadius = 10
+        MichealLinLiu.layer.borderWidth = 1
+        MichealLinLiu.layer.borderColor = UIColor.white.cgColor
+        MichealLinLiu.backgroundColor = UIColor.white.withAlphaComponent(0.1)
         MichealLinLiu.setTitleColor(color, for: .normal)
         MichealLinLiu.titleLabel?.font = contentFont
-        MichealLinLiu.center.x = xCenterPos * 1.45
+        MichealLinLiu.center.x = xCenterPos
         MichealLinLiu.center.y = yCenterPos - distance * 3
         MichealLinLiu.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-        CaiYang.setTitle("Cai Yang", for: .normal)
+        //CaiYang.setTitle("Cai Yang", for: .normal)
+        setMultipleFonts(button: CaiYang, title: "Developer  ", name: "Cai Yang")
+        CaiYang.titleLabel?.baselineAdjustment = .alignCenters
+        CaiYang.layer.cornerRadius = 10
+        CaiYang.layer.borderWidth = 1
+        CaiYang.layer.borderColor = UIColor.white.cgColor
+        CaiYang.backgroundColor = UIColor.white.withAlphaComponent(0.1)
         CaiYang.setTitleColor(color, for: .normal)
         CaiYang.titleLabel?.font = contentFont
-        CaiYang.center.x = xCenterPos * 1.4
+        CaiYang.center.x = xCenterPos
         CaiYang.center.y = yCenterPos - distance * 2
         CaiYang.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-        SissyZhou.setTitle("Sissy Zhou", for: .normal)
+        //SissyZhou.setTitle("Sissy Zhou", for: .normal)
+        setMultipleFonts(button: SissyZhou, title: "Designer  ", name: "Sissy Zhou")
+        SissyZhou.titleLabel?.baselineAdjustment = .alignCenters
+        SissyZhou.layer.cornerRadius = 10
+        SissyZhou.layer.borderWidth = 1
+        SissyZhou.layer.borderColor = UIColor.white.cgColor
+        SissyZhou.backgroundColor = UIColor.white.withAlphaComponent(0.1)
         SissyZhou.setTitleColor(color, for: .normal)
         SissyZhou.titleLabel?.font = contentFont
-        SissyZhou.center.x = xCenterPos * 1.4
+        SissyZhou.center.x = xCenterPos
         SissyZhou.center.y = yCenterPos - distance
         SissyZhou.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-        Lightman.setTitle("Lightman", for: .normal)
+        //Lightman.setTitle("Lightman", for: .normal)
+        setMultipleFonts(button: Lightman, title: "Marketing  ", name: "Lightman")
+        Lightman.titleLabel?.baselineAdjustment = .alignCenters
+        Lightman.layer.cornerRadius = 10
+        Lightman.layer.borderWidth = 1
+        Lightman.layer.borderColor = UIColor.white.cgColor
+        Lightman.backgroundColor = UIColor.white.withAlphaComponent(0.1)
         Lightman.setTitleColor(color, for: .normal)
         Lightman.titleLabel?.font = contentFont
-        Lightman.center.x = xCenterPos * 1.4
+        Lightman.center.x = xCenterPos
         Lightman.center.y = yCenterPos
         Lightman.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-        MichealDing.setTitle("Micheal Ding", for: .normal)
+        //MichealDing.setTitle("Micheal Ding", for: .normal)
+        setMultipleFonts(button: MichealDing, title: "Co-ordinator  ", name: "Micheal Ding")
+        MichealDing.titleLabel?.baselineAdjustment = .alignCenters
+        MichealDing.layer.cornerRadius = 10
+        MichealDing.layer.borderWidth = 1
+        MichealDing.layer.borderColor = UIColor.white.cgColor
+        MichealDing.backgroundColor = UIColor.white.withAlphaComponent(0.1)
         MichealDing.setTitleColor(color, for: .normal)
         MichealDing.titleLabel?.font = contentFont
-        MichealDing.center.x = xCenterPos * 1.4
+        MichealDing.center.x = xCenterPos
         MichealDing.center.y = yCenterPos + distance
         MichealDing.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
@@ -205,7 +235,7 @@ class AppContributorsViewController: UIViewController {
         let frame = UIScreen.main.bounds
         let distance = UIScreen.main.bounds.size.height / 15
         
-        let xCenterPos = UIScreen.main.bounds.size.width/2
+        //let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
         
         let animationOptions = UIView.AnimationOptions.repeat.rawValue | UIView.AnimationOptions.curveLinear.rawValue
@@ -240,7 +270,7 @@ class AppContributorsViewController: UIViewController {
         let frame = UIScreen.main.bounds
         let distance = UIScreen.main.bounds.size.height / 15
         
-        let xCenterPos = UIScreen.main.bounds.size.width/2
+        //let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
         
         let animationOptions = UIView.AnimationOptions.repeat.rawValue | UIView.AnimationOptions.curveLinear.rawValue
@@ -267,4 +297,11 @@ class AppContributorsViewController: UIViewController {
         }, completion: nil)
     }
 
+    func setMultipleFonts(button:UIButton, title:String, name:String){
+//        let attributedText = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont(name: "ChalkboardSE-Bold", size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.white])
+//        attributedText.append(NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont(name: "Chalkboard SE", size: 25)!, NSAttributedString.Key.foregroundColor: UIColor.white]))
+        let attributedText = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 25),NSAttributedString.Key.foregroundColor: UIColor.white])
+        attributedText.append(NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 25), NSAttributedString.Key.foregroundColor: UIColor.white]))
+        button.setAttributedTitle(attributedText,for: .normal)
+    }
 }
