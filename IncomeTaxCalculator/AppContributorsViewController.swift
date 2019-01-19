@@ -227,7 +227,6 @@ class AppContributorsViewController: UIViewController {
     }
     
     
-    
    
     
     func animateBackground() {
