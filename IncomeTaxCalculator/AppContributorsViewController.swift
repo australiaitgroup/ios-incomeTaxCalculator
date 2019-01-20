@@ -25,7 +25,7 @@ class AppContributorsViewController: UIViewController {
     var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
     var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
     var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
-    var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+    var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
     
     let titleFont = UIFont(name: "ChalkboardSE-Bold", size: 25)
     let contentFont = UIFont(name: "Chalkboard SE", size: 25)
@@ -192,9 +192,9 @@ class AppContributorsViewController: UIViewController {
         MichealDing.center.y = yCenterPos + distance
         MichealDing.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-        returnButton.setImage(#imageLiteral(resourceName: "ButtonImage.png"), for: .normal)
-        returnButton.center.x = xCenterPos * 1.45
-        returnButton.center.y = yCenterPos + distance * (4 * distance / 60)
+        returnButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
+        returnButton.center.x = xCenterPos * 1.7
+        returnButton.center.y = yCenterPos + distance * (6 * distance / 60)
         returnButton.addTarget(self, action: #selector(returnButtonTouched), for: .touchUpInside)
     }
     

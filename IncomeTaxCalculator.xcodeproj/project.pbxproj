@@ -23,6 +23,7 @@
 		B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B532A21B219FB406008BB69A /* AppContributorsViewController.xib */; };
 		B5932F2B21F2A7080089804D /* ButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2921F2A7080089804D /* ButtonImage.png */; };
 		B5932F2C21F2A7080089804D /* Wave3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2A21F2A7080089804D /* Wave3.jpg */; };
+		B5932F2F21F494230089804D /* Button2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2D21F494230089804D /* Button2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B532A21B219FB406008BB69A /* AppContributorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContributorsViewController.xib; sourceTree = "<group>"; };
 		B5932F2921F2A7080089804D /* ButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonImage.png; sourceTree = SOURCE_ROOT; };
 		B5932F2A21F2A7080089804D /* Wave3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wave3.jpg; sourceTree = SOURCE_ROOT; };
+		B5932F2D21F494230089804D /* Button2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button2.jpg; sourceTree = SOURCE_ROOT; };
 		E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				B532A21A219FB406008BB69A /* AppContributorsViewController.swift */,
 				B5932F2921F2A7080089804D /* ButtonImage.png */,
 				B5932F2A21F2A7080089804D /* Wave3.jpg */,
+				B5932F2D21F494230089804D /* Button2.jpg */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5932F2F21F494230089804D /* Button2.jpg in Resources */,
 				B532A218219FB3EE008BB69A /* TaxCalculationViewController.xib in Resources */,
 				AAB9EB47215F017E006120F9 /* Main.storyboard in Resources */,
 				B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */,
@@ -567,15 +571,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D975J5Y74D;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.itc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -587,15 +593,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D975J5Y74D;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.itc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
