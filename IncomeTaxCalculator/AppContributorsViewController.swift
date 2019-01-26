@@ -88,14 +88,14 @@ class AppContributorsViewController: UIViewController {
         titleBegin.font = UIFont.boldSystemFont(ofSize: 35)
         titleBegin.textColor = color
         titleBegin.center.x = xCenterPos/2.5
-        titleBegin.center.y = yCenterPos - distance * 5
+        titleBegin.center.y = yCenterPos - distance * 6.1
         
         titleContent.text = "Build Tax Calculator For You"
         titleContent.textAlignment = .left
         titleContent.font = UIFont.systemFont(ofSize: 20)
         titleContent.textColor = color
         titleContent.center.x = xCenterPos * 1.3
-        titleContent.center.y = yCenterPos - distance * 4.95
+        titleContent.center.y = yCenterPos - distance * 6
        
     
     }
@@ -137,7 +137,7 @@ class AppContributorsViewController: UIViewController {
         MichealLinLiu.setTitleColor(color, for: .normal)
         MichealLinLiu.titleLabel?.font = contentFont
         MichealLinLiu.center.x = xCenterPos
-        MichealLinLiu.center.y = yCenterPos - distance * 3
+        MichealLinLiu.center.y = yCenterPos - distance * 4.5
         MichealLinLiu.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         //CaiYang.setTitle("Cai Yang", for: .normal)
@@ -150,7 +150,7 @@ class AppContributorsViewController: UIViewController {
         CaiYang.setTitleColor(color, for: .normal)
         CaiYang.titleLabel?.font = contentFont
         CaiYang.center.x = xCenterPos
-        CaiYang.center.y = yCenterPos - distance * 2
+        CaiYang.center.y = yCenterPos - distance * 3
         CaiYang.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         //SissyZhou.setTitle("Sissy Zhou", for: .normal)
@@ -163,7 +163,7 @@ class AppContributorsViewController: UIViewController {
         SissyZhou.setTitleColor(color, for: .normal)
         SissyZhou.titleLabel?.font = contentFont
         SissyZhou.center.x = xCenterPos
-        SissyZhou.center.y = yCenterPos - distance
+        SissyZhou.center.y = yCenterPos - distance * 1.5
         SissyZhou.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         //Lightman.setTitle("Lightman", for: .normal)
@@ -189,7 +189,7 @@ class AppContributorsViewController: UIViewController {
         MichealDing.setTitleColor(color, for: .normal)
         MichealDing.titleLabel?.font = contentFont
         MichealDing.center.x = xCenterPos
-        MichealDing.center.y = yCenterPos + distance
+        MichealDing.center.y = yCenterPos + distance * 1.5
         MichealDing.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         returnButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
