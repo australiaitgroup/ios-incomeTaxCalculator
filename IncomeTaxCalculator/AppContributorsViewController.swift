@@ -12,19 +12,14 @@ class AppContributorsViewController: UIViewController {
     
     
     
-    var designer = UILabel(frame: CGRect(x: 16, y: 177, width: 120, height: 35))
-    var developerOne = UILabel(frame: CGRect(x: 16, y: 340, width: 160, height: 35))
-    var developerTwo = UILabel(frame: CGRect(x: 16, y: 424, width: 160, height: 35))
-    var marketing = UILabel(frame: CGRect(x: 16, y: 596, width: 120, height: 35))
-    var coOrdinator = UILabel(frame: CGRect(x: 16, y: 596, width: 160, height: 35))
     var titleBegin = UILabel(frame: CGRect(x: 16, y: 596, width: 80, height: 35))
     var titleContent = UILabel(frame: CGRect(x: 16, y: 596, width: 300, height: 35))
     
-    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
-    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
-    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
-    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
-    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 360, height: 40))
+    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
+    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
+    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
+    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
+    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
     var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
     
     let titleFont = UIFont(name: "ChalkboardSE-Bold", size: 25)
@@ -54,36 +49,6 @@ class AppContributorsViewController: UIViewController {
         let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
  
-        designer.text = "Designer"
-        designer.font = titleFont
-        designer.textColor = color
-        designer.center.x = xCenterPos/2
-        designer.center.y = yCenterPos - distance
-        
-        developerOne.text = "Developer"
-        developerOne.font = titleFont
-        developerOne.textColor = color
-        developerOne.center.x = xCenterPos/1.8
-        developerOne.center.y = yCenterPos - distance * 3
-       
-        developerTwo.text = "Developer"
-        developerTwo.font = titleFont
-        developerTwo.textColor = color
-        developerTwo.center.x = xCenterPos/1.7
-        developerTwo.center.y = yCenterPos - distance * 2
-        
-        marketing.text = "Marketing"
-        marketing.font = titleFont
-        marketing.textColor = color
-        marketing.center.x = xCenterPos/2
-        marketing.center.y = yCenterPos
-        
-        coOrdinator.text = "Co-ordinator"
-        coOrdinator.font = titleFont
-        coOrdinator.textColor = color
-        coOrdinator.center.x = xCenterPos/2
-        coOrdinator.center.y = yCenterPos + distance
-        
         titleBegin.text = "We"
         titleBegin.font = UIFont.boldSystemFont(ofSize: 35)
         titleBegin.textColor = color
