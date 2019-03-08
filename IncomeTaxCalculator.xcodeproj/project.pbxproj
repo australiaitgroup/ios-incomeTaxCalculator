@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D31653FA020AC8ABD7625DF /* Pods_IncomeTaxCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */; };
-		AA4251432168423A00B1A333 /* TaxTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4251422168423A00B1A333 /* TaxTier.swift */; };
-		AA7E7E67217AA8F400E52440 /* TaxReturnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */; };
+		AA4204A422333272009C9346 /* GradientLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049222333270009C9346 /* GradientLayers.swift */; };
+		AA4204A522333272009C9346 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049322333270009C9346 /* FontConfig.swift */; };
+		AA4204A622333272009C9346 /* ColorConfig .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049422333270009C9346 /* ColorConfig .swift */; };
+		AA4204A722333272009C9346 /* SizeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049522333270009C9346 /* SizeConfig.swift */; };
+		AA4204A822333272009C9346 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049722333270009C9346 /* TextFields.swift */; };
+		AA4204A922333272009C9346 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049822333270009C9346 /* Buttons.swift */; };
+		AA4204AA22333272009C9346 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049922333270009C9346 /* Labels.swift */; };
+		AA4204AB22333272009C9346 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049B22333271009C9346 /* SelectionView.swift */; };
+		AA4204AC22333272009C9346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA42049C22333271009C9346 /* Main.storyboard */; };
+		AA4204AD22333272009C9346 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049E22333271009C9346 /* MainView.swift */; };
+		AA4204AE22333272009C9346 /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4204A022333271009C9346 /* CalculationModel.swift */; };
+		AA4204AF22333272009C9346 /* StringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4204A222333272009C9346 /* StringValue.swift */; };
+		AA4204B022333272009C9346 /* calculateButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4204A322333272009C9346 /* calculateButton.png */; };
 		AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */; };
-		AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB1B215EFC8C006120F9 /* ViewController.swift */; };
 		AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB20215EFC8E006120F9 /* Assets.xcassets */; };
 		AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */; };
 		AAB9EB2F215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB2E215EFC8E006120F9 /* IncomeTaxCalculatorTests.swift */; };
 		AAB9EB3A215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9EB39215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift */; };
-		AAB9EB47215F017E006120F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB9EB1D215EFC8C006120F9 /* Main.storyboard */; };
 		B532A218219FB3EE008BB69A /* TaxCalculationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B532A216219FB3EE008BB69A /* TaxCalculationViewController.xib */; };
 		B532A219219FB3EE008BB69A /* TaxCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532A217219FB3EE008BB69A /* TaxCalculationViewController.swift */; };
 		B532A21C219FB406008BB69A /* AppContributorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532A21A219FB406008BB69A /* AppContributorsViewController.swift */; };
 		B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B532A21B219FB406008BB69A /* AppContributorsViewController.xib */; };
 		B5932F2C21F2A7080089804D /* Wave3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2A21F2A7080089804D /* Wave3.jpg */; };
 		B5932F2F21F494230089804D /* Button2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2D21F494230089804D /* Button2.jpg */; };
+		E9B9AE5636884699E1D0C8B5 /* Pods_IncomeTaxCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,16 +52,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F45100E46DE720A834BD457 /* Pods-IncomeTaxCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		AA4251422168423A00B1A333 /* TaxTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxTier.swift; sourceTree = "<group>"; };
-		AA4251452168450200B1A333 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		AA4251462168459900B1A333 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0CB20A65E348F07A7430A4 /* Pods-IncomeTaxCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		AA42049222333270009C9346 /* GradientLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayers.swift; sourceTree = "<group>"; };
+		AA42049322333270009C9346 /* FontConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
+		AA42049422333270009C9346 /* ColorConfig .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorConfig .swift"; sourceTree = "<group>"; };
+		AA42049522333270009C9346 /* SizeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeConfig.swift; sourceTree = "<group>"; };
+		AA42049722333270009C9346 /* TextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		AA42049822333270009C9346 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		AA42049922333270009C9346 /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		AA42049B22333271009C9346 /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		AA42049D22333271009C9346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA42049E22333271009C9346 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AA4204A022333271009C9346 /* CalculationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
+		AA4204A222333272009C9346 /* StringValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringValue.swift; sourceTree = "<group>"; };
+		AA4204A322333272009C9346 /* calculateButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculateButton.png; sourceTree = "<group>"; };
 		AA4251472168459A00B1A333 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxReturnTableViewController.swift; sourceTree = "<group>"; };
 		AAB9EB16215EFC8C006120F9 /* IncomeTaxCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncomeTaxCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAB9EB1B215EFC8C006120F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAB9EB1E215EFC8C006120F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAB9EB20215EFC8E006120F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAB9EB23215EFC8E006120F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAB9EB25215EFC8E006120F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,14 +79,13 @@
 		AAB9EB35215EFC8E006120F9 /* IncomeTaxCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncomeTaxCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB9EB39215EFC8E006120F9 /* IncomeTaxCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTaxCalculatorUITests.swift; sourceTree = "<group>"; };
 		AAB9EB3B215EFC8E006120F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B408326035FD93C38BE44890 /* Pods-IncomeTaxCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		B532A216219FB3EE008BB69A /* TaxCalculationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxCalculationViewController.xib; sourceTree = "<group>"; };
 		B532A217219FB3EE008BB69A /* TaxCalculationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxCalculationViewController.swift; sourceTree = "<group>"; };
 		B532A21A219FB406008BB69A /* AppContributorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContributorsViewController.swift; sourceTree = "<group>"; };
 		B532A21B219FB406008BB69A /* AppContributorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContributorsViewController.xib; sourceTree = "<group>"; };
 		B5932F2A21F2A7080089804D /* Wave3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wave3.jpg; sourceTree = SOURCE_ROOT; };
 		B5932F2D21F494230089804D /* Button2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button2.jpg; sourceTree = SOURCE_ROOT; };
-		E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF8FBAD124DA7E82925052FA /* Pods-IncomeTaxCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D31653FA020AC8ABD7625DF /* Pods_IncomeTaxCalculator.framework in Frameworks */,
+				E9B9AE5636884699E1D0C8B5 /* Pods_IncomeTaxCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,21 +114,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1617B0EFC16D831A0DA85D4F /* Frameworks */ = {
+		AA42049122333270009C9346 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				E0487E06A3A062CD76B8EB87 /* Pods_IncomeTaxCalculator.framework */,
+				AA42049222333270009C9346 /* GradientLayers.swift */,
+				AA42049322333270009C9346 /* FontConfig.swift */,
+				AA42049422333270009C9346 /* ColorConfig .swift */,
+				AA42049522333270009C9346 /* SizeConfig.swift */,
 			);
-			name = Frameworks;
+			path = Factory;
 			sourceTree = "<group>";
 		};
-		16FEA09187BE5C9E5665CE23 /* Pods */ = {
+		AA42049622333270009C9346 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B408326035FD93C38BE44890 /* Pods-IncomeTaxCalculator.debug.xcconfig */,
-				3F45100E46DE720A834BD457 /* Pods-IncomeTaxCalculator.release.xcconfig */,
+				AA42049722333270009C9346 /* TextFields.swift */,
+				AA42049822333270009C9346 /* Buttons.swift */,
+				AA42049922333270009C9346 /* Labels.swift */,
 			);
-			name = Pods;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA42049A22333271009C9346 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA42049B22333271009C9346 /* SelectionView.swift */,
+				AA42049C22333271009C9346 /* Main.storyboard */,
+				AA42049E22333271009C9346 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA42049F22333271009C9346 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA4204A022333271009C9346 /* CalculationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA4204A122333272009C9346 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				AA4204A222333272009C9346 /* StringValue.swift */,
+				AA4204A322333272009C9346 /* calculateButton.png */,
+			);
+			path = Value;
 			sourceTree = "<group>";
 		};
 		AAB9EB0D215EFC8C006120F9 = {
@@ -122,8 +169,8 @@
 				AAB9EB2D215EFC8E006120F9 /* IncomeTaxCalculatorTests */,
 				AAB9EB38215EFC8E006120F9 /* IncomeTaxCalculatorUITests */,
 				AAB9EB17215EFC8C006120F9 /* Products */,
-				16FEA09187BE5C9E5665CE23 /* Pods */,
-				1617B0EFC16D831A0DA85D4F /* Frameworks */,
+				B7725A76ACD52C71234BD181 /* Pods */,
+				C1F5F9A2E55FCA49A608C4D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,16 +187,17 @@
 		AAB9EB18215EFC8C006120F9 /* IncomeTaxCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				AA42049122333270009C9346 /* Factory */,
+				AA42049F22333271009C9346 /* Model */,
+				AA4204A122333272009C9346 /* Value */,
+				AA42049622333270009C9346 /* ViewModel */,
+				AA42049A22333271009C9346 /* Views */,
 				B532A217219FB3EE008BB69A /* TaxCalculationViewController.swift */,
 				B532A216219FB3EE008BB69A /* TaxCalculationViewController.xib */,
 				AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */,
-				AAB9EB1B215EFC8C006120F9 /* ViewController.swift */,
-				AAB9EB1D215EFC8C006120F9 /* Main.storyboard */,
 				AAB9EB20215EFC8E006120F9 /* Assets.xcassets */,
 				AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */,
 				AAB9EB25215EFC8E006120F9 /* Info.plist */,
-				AA4251422168423A00B1A333 /* TaxTier.swift */,
-				AA7E7E66217AA8F400E52440 /* TaxReturnTableViewController.swift */,
 				B532A21B219FB406008BB69A /* AppContributorsViewController.xib */,
 				B532A21A219FB406008BB69A /* AppContributorsViewController.swift */,
 				B5932F2A21F2A7080089804D /* Wave3.jpg */,
@@ -174,6 +222,23 @@
 				AAB9EB3B215EFC8E006120F9 /* Info.plist */,
 			);
 			path = IncomeTaxCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		B7725A76ACD52C71234BD181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF8FBAD124DA7E82925052FA /* Pods-IncomeTaxCalculator.debug.xcconfig */,
+				0D0CB20A65E348F07A7430A4 /* Pods-IncomeTaxCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1F5F9A2E55FCA49A608C4D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +350,10 @@
 			files = (
 				B5932F2F21F494230089804D /* Button2.jpg in Resources */,
 				B532A218219FB3EE008BB69A /* TaxCalculationViewController.xib in Resources */,
-				AAB9EB47215F017E006120F9 /* Main.storyboard in Resources */,
+				AA4204B022333272009C9346 /* calculateButton.png in Resources */,
 				B532A21D219FB406008BB69A /* AppContributorsViewController.xib in Resources */,
 				AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */,
+				AA4204AC22333272009C9346 /* Main.storyboard in Resources */,
 				B5932F2C21F2A7080089804D /* Wave3.jpg in Resources */,
 				AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */,
 			);
@@ -382,12 +448,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB9EB1C215EFC8C006120F9 /* ViewController.swift in Sources */,
-				AA7E7E67217AA8F400E52440 /* TaxReturnTableViewController.swift in Sources */,
+				AA4204A522333272009C9346 /* FontConfig.swift in Sources */,
+				AA4204AE22333272009C9346 /* CalculationModel.swift in Sources */,
+				AA4204A922333272009C9346 /* Buttons.swift in Sources */,
+				AA4204A422333272009C9346 /* GradientLayers.swift in Sources */,
+				AA4204AB22333272009C9346 /* SelectionView.swift in Sources */,
+				AA4204AA22333272009C9346 /* Labels.swift in Sources */,
 				B532A21C219FB406008BB69A /* AppContributorsViewController.swift in Sources */,
+				AA4204A822333272009C9346 /* TextFields.swift in Sources */,
 				B532A219219FB3EE008BB69A /* TaxCalculationViewController.swift in Sources */,
 				AAB9EB1A215EFC8C006120F9 /* AppDelegate.swift in Sources */,
-				AA4251432168423A00B1A333 /* TaxTier.swift in Sources */,
+				AA4204A722333272009C9346 /* SizeConfig.swift in Sources */,
+				AA4204AF22333272009C9346 /* StringValue.swift in Sources */,
+				AA4204AD22333272009C9346 /* MainView.swift in Sources */,
+				AA4204A622333272009C9346 /* ColorConfig .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +497,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AAB9EB1D215EFC8C006120F9 /* Main.storyboard */ = {
+		AA42049C22333271009C9346 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AAB9EB1E215EFC8C006120F9 /* Base */,
-				AA4251452168450200B1A333 /* en */,
-				AA4251462168459900B1A333 /* zh-Hans */,
+				AA42049D22333271009C9346 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -563,13 +635,13 @@
 		};
 		AAB9EB3F215EFC8E006120F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B408326035FD93C38BE44890 /* Pods-IncomeTaxCalculator.debug.xcconfig */;
+			baseConfigurationReference = DF8FBAD124DA7E82925052FA /* Pods-IncomeTaxCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5YTQTN7ZM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,13 +657,13 @@
 		};
 		AAB9EB40215EFC8E006120F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F45100E46DE720A834BD457 /* Pods-IncomeTaxCalculator.release.xcconfig */;
+			baseConfigurationReference = 0D0CB20A65E348F07A7430A4 /* Pods-IncomeTaxCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5YTQTN7ZM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
