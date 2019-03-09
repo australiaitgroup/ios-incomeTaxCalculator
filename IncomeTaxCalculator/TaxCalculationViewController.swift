@@ -27,6 +27,7 @@ class TaxCalculationViewController: UIViewController {
     var medicareLevyButtonValue: Bool = false
     var healthCoverButtonValue: Bool = false
     
+    var infoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
     
     
     
@@ -59,6 +60,16 @@ class TaxCalculationViewController: UIViewController {
         
         model.setCheckbox3(false)
         
+        self.view.addSubview(infoButton)
+        
+        let distance = UIScreen.main.bounds.size.height / 15
+        let xCenterPos = UIScreen.main.bounds.size.width/2
+        let yCenterPos = UIScreen.main.bounds.size.height/2
+        
+        infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
+        infoButton.center.x = xCenterPos * 1.8
+        infoButton.center.y = yCenterPos + distance * 1.25 * (6 * distance / 60)
+        infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
         
         //M:residentialStatus buttons
         for item in selectionView.residentialStatusButtons{
@@ -282,4 +293,11 @@ class TaxCalculationViewController: UIViewController {
         model.setFourOperand(selectionView.payFrequencyDefaultButton.currentTitle!)
     }
     
+    @objc func infoButtonTouched(sender: UIButton!) {
+        let calculationViewController = AppContributorsViewController(nibName:"AppContributorsViewController", bundle: nil)
+        
+        present(calculationViewController, animated: true, completion: nil)
+        
+    }
+
 }
