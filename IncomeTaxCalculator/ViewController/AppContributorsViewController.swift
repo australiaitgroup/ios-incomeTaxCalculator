@@ -15,11 +15,11 @@ class AppContributorsViewController: UIViewController {
     var titleBegin = UILabel(frame: CGRect(x: 16, y: 596, width: 80, height: 35))
     var titleContent = UILabel(frame: CGRect(x: 16, y: 596, width: 300, height: 35))
     
-    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
-    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
-    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
-    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
-    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 340, height: 40))
+    var MichealLinLiu = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+    var CaiYang = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+    var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+    var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+    var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
     var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
     
     let titleFont = UIFont(name: "ChalkboardSE-Bold", size: 25)
