@@ -68,7 +68,7 @@ class TaxCalculationViewController: UIViewController {
         
         infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
         infoButton.center.x = xCenterPos * 1.8
-        infoButton.center.y = yCenterPos + distance * 1.25 * (6 * distance / 60)
+        infoButton.center.y = yCenterPos * 1.9
         infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
         
         //M:residentialStatus buttons
