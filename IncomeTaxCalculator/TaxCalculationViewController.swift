@@ -62,13 +62,12 @@ class TaxCalculationViewController: UIViewController {
         
         self.view.addSubview(infoButton)
         
-        let distance = UIScreen.main.bounds.size.height / 15
         let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
         
         infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
         infoButton.center.x = xCenterPos * 1.8
-        infoButton.center.y = yCenterPos + distance * 1.25 * (6 * distance / 60)
+        infoButton.center.y = yCenterPos * 1.9
         infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
         
         //M:residentialStatus buttons
@@ -294,10 +293,10 @@ class TaxCalculationViewController: UIViewController {
     }
     
     @objc func infoButtonTouched(sender: UIButton!) {
-        let calculationViewController = AppContributorsViewController(nibName:"AppContributorsViewController", bundle: nil)
+        let contributors = AppContributorsViewController(nibName: "AppContributorsViewController", bundle: nil)
         
-        present(calculationViewController, animated: true, completion: nil)
+        present(contributors, animated: true, completion: nil)
         
     }
-
+    
 }
