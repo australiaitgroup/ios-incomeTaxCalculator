@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let homeViewController = TaxCalculationViewController()
-        homeViewController.view.backgroundColor = UIColor.white
         window!.rootViewController = homeViewController
         return true
     }

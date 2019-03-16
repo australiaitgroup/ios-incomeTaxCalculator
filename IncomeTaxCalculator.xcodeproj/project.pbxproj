@@ -187,10 +187,6 @@
 		AAB9EB18215EFC8C006120F9 /* IncomeTaxCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				B506BEEC2235F07600897F8B /* AppContributorsViewController.swift */,
-				B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */,
-				B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */,
-				B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */,
 				B51F64822235F0A100E626E9 /* ViewController */,
 				AA42049122333270009C9346 /* Factory */,
 				AA42049F22333271009C9346 /* Model */,
@@ -228,6 +224,10 @@
 		B51F64822235F0A100E626E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B506BEEC2235F07600897F8B /* AppContributorsViewController.swift */,
+				B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */,
+				B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */,
+				B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -648,16 +648,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.itc;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.ict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = iODDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -669,17 +669,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.itc;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.ict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = IOSICTDist;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
