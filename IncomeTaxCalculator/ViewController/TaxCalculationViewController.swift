@@ -40,6 +40,9 @@ class TaxCalculationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let deviceType = UIDevice.current.name
+        print(deviceType)
+        
         //M: default settings
         selectionView.residentialStatusValue.isUserInteractionEnabled = false
         

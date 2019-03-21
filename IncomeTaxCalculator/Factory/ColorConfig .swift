@@ -70,11 +70,11 @@ struct ColorConfig {
     
     //M: residentialStatusValue label
     static let residentialStatusValueBackgroundColor = UIColor.clear
-    static let residentialStatusValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
+    static let residentialStatusValueTextColor = UIColor(red: (190 / 255.0), green: (99 / 255.0), blue: (195 / 255.0), alpha: 1)
     
     //M: payFrequencyValue label
     static let payFrequencyValueBackgroundColor = UIColor.clear
-    static let payFrequencyValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
+    static let payFrequencyValueTextColor = UIColor(red: (190 / 255.0), green: (99 / 255.0), blue: (195 / 255.0), alpha: 1)
     
     //M: TFN button
     static let TFNButtonBackgroundColor = UIColor.clear
