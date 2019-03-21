@@ -46,35 +46,35 @@ struct ColorConfig {
     
     //M: TFN label
     static let TFNLabelBackgroundColor = UIColor.clear
-    static let TFNLabelTextColor = UIColor.gray
+    static let TFNLabelTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: medicareLevy label
     static let medicareLevyLabelBackgroundColor = UIColor.clear
-    static let medicareLevyLabelTextColor = UIColor.gray
+    static let medicareLevyLabelTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: healthCover label
     static let healthCoverLabelBackgroundColor = UIColor.clear
-    static let healthCoverLabelTextColor = UIColor.gray
+    static let healthCoverLabelTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: incomeValue label
     static let incomeValueBackgroundColor = UIColor.clear
-    static let incomeValueTextColor = UIColor.gray
+    static let incomeValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: financialYearValue label
     static let financialYearValueBackgroundColor = UIColor.clear
-    static let financialYearValueTextColor = UIColor.gray
+    static let financialYearValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: deductionsValue label
     static let deductionsValueBackgroundColor = UIColor.clear
-    static let deductionsValueTextColor = UIColor.gray
+    static let deductionsValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: residentialStatusValue label
     static let residentialStatusValueBackgroundColor = UIColor.clear
-    static let residentialStatusValueTextColor = UIColor(red: (170 / 255.0), green: (109 / 255.0), blue: (205 / 255.0), alpha: 1)
+    static let residentialStatusValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: payFrequencyValue label
     static let payFrequencyValueBackgroundColor = UIColor.clear
-    static let payFrequencyValueTextColor = UIColor(red: (170 / 255.0), green: (109 / 255.0), blue: (205 / 255.0), alpha: 1)
+    static let payFrequencyValueTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M: TFN button
     static let TFNButtonBackgroundColor = UIColor.clear
@@ -94,7 +94,7 @@ struct ColorConfig {
     
     //M:residentialStatusDefaultButton
     static let residentialStatusDefaultButtonBackgroundColor = UIColor.clear
-    static let residentialStatusDefaultButtonTextColor = UIColor.gray
+    static let residentialStatusDefaultButtonTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M:residentialStatus foreign Button
     static let residentialStatusForeignButtonBackgroundColor = UIColor.white
@@ -110,7 +110,7 @@ struct ColorConfig {
     
     //M:payFrequencyDefaultButton
     static let payFrequencyDefaultButtonBackgroundColor = UIColor.clear
-    static let payFrequencyDefaultButtonTextColor = UIColor.gray
+    static let payFrequencyDefaultButtonTextColor = UIColor(red: (255 / 255.0), green: (255 / 255.0), blue: (255 / 255.0), alpha: 0.5)
     
     //M:payFrequency WeeklyButton
     static let payFrequencyWeeklyButtonBackgroundColor = UIColor.white

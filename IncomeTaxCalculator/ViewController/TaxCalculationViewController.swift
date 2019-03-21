@@ -19,6 +19,7 @@ class TaxCalculationViewController: UIViewController {
     var mainView = MainView()
     var selectionView = SelectionView()
     private var model = CalculationModel()
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer()
     
     var income: Double = 0.00
     var deductions: Double = 0.00
@@ -40,8 +41,6 @@ class TaxCalculationViewController: UIViewController {
         super.viewDidLoad()
         
         //M: default settings
-        selectionView.financialYearValue.isUserInteractionEnabled = false
-        
         selectionView.residentialStatusValue.isUserInteractionEnabled = false
         
         selectionView.payFrequencyValue.isUserInteractionEnabled = false
@@ -54,22 +53,30 @@ class TaxCalculationViewController: UIViewController {
         
         model.setFourOperand(selectionView.payFrequencyDefaultButton.currentTitle!)
         
-        model.setCheckbox1(false)
+        model.setCheckbox1(true)
         
         model.setCheckbox2(false)
         
         model.setCheckbox3(false)
         
-        self.view.addSubview(infoButton)
         
-        let xCenterPos = UIScreen.main.bounds.size.width/2
-        let yCenterPos = UIScreen.main.bounds.size.height/2
+        //M: other settings
+        tap.addTarget(self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
-        infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
-        infoButton.center.x = xCenterPos * 1.8
-        infoButton.center.y = yCenterPos * 1.9
-        infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
         
+        //M: check the title of the residentialStatusDefault is changed or not.
+        for item in selectionView.residentialStatusAllButtons{
+            item.addTarget(self, action: #selector(residentialStatusDefaultValueDidChange), for: .touchUpInside)
+        }
+        
+        //M: check the title of the payFrequencyDefault is changed or not.
+        for item in selectionView.payFrequencyAllButtons{
+            item.addTarget(self, action: #selector(payFrequencyDefaultValueDidChange), for: .touchUpInside)
+        }
+        
+        
+        //M: add buttons
         //M:residentialStatus buttons
         for item in selectionView.residentialStatusButtons{
             if item.currentTitle != nil{
@@ -90,32 +97,50 @@ class TaxCalculationViewController: UIViewController {
         selectionView.payFrequencyDefaultButton.addTarget(self, action: #selector(onClickPayFrequencyDefaultButton), for: .touchUpInside)
         
         
+        //M:TFNButton
         selectionView.TFNButton.addTarget(self, action: #selector(onClickTFNButtons), for: .touchUpInside)
-        selectionView.medicareLevyButton.addTarget(self, action: #selector(onClickMedicareLevyButtons), for: .touchUpInside)
-        selectionView.healthCoverButton.addTarget(self, action: #selector(onClickHealthCoverButtons), for: .touchUpInside)
         
+        
+        //M:medicareLevyButton
+        selectionView.medicareLevyButton.addTarget(self, action: #selector(onClickMedicareLevyButtons), for: .touchUpInside)
+        
+        
+        //M:healthCoverButton
+        selectionView.healthCoverButton.addTarget(self, action: #selector(onClickHealthCoverButtons), for: .touchUpInside)
         
         
         //M: check income value in incomeValue label
         selectionView.incomeValue.addTarget(self, action: #selector(incomeValueDidChange), for: UIControl.Event.editingChanged)
+        selectionView.incomeValue.addTarget(self, action: #selector(incomeValueTouchDown), for: UIControl.Event.touchDown)
+        
         
         //M: check deductions value in incomeValue label
-        selectionView.deductionsValue.addTarget(self, action: #selector(deductionasValueDidChange), for: UIControl.Event.editingChanged)
-        
-        //M: check the title of the residentialStatusDefault is changed or not.
-        for item in selectionView.residentialStatusAllButtons{
-            item.addTarget(self, action: #selector(residentialStatusDefaultValueDidChange), for: .touchUpInside)
-        }
-        
-        //M: check the title of the payFrequencyDefault is changed or not.
-        for item in selectionView.payFrequencyAllButtons{
-            item.addTarget(self, action: #selector(payFrequencyDefaultValueDidChange), for: .touchUpInside)
-        }
+        selectionView.deductionsValue.addTarget(self, action: #selector(deductionsValueDidChange), for: UIControl.Event.editingChanged)
+        selectionView.deductionsValue.addTarget(self, action: #selector(deductionsValueTouchDown), for: UIControl.Event.touchDown)
         
         
-        //M: calculation
+        //M: check finanical year value
+        selectionView.financialYearValue.addTarget(self, action: #selector(financialYearValueDidChange), for: UIControl.Event.editingChanged)
+    
+        
+        //M: calculation button
         selectionView.calculateButton.addTarget(self, action: #selector(onClickCalculateButton), for: .touchUpInside)
+        
+        
+        
+        //Y: code is from YangCai
+        self.view.addSubview(infoButton)
+        
+        let xCenterPos = UIScreen.main.bounds.size.width/2
+        let yCenterPos = UIScreen.main.bounds.size.height/2
+        
+        infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
+        infoButton.center.x = xCenterPos * 1.8
+        infoButton.center.y = yCenterPos * 1.9
+        infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
     }
+    
+    
     
     @objc func onClickCalculateButton(sender: UIButton){
         model.calculationEngine()
@@ -134,8 +159,8 @@ class TaxCalculationViewController: UIViewController {
             }
             selectionView.payFrequencyDefaultButton.isHidden = !selectionView.payFrequencyDefaultButton.isHidden
         }
-        
     }
+    
     
     @objc func onClickButtonsGetResidentialStatus(sender: UIButton){
         selectionView.residentialStatusDefaultButton.setTitle(sender.currentTitle, for: .normal)
@@ -148,6 +173,7 @@ class TaxCalculationViewController: UIViewController {
         selectionView.payFrequencyDefaultButton.isHidden = !selectionView.payFrequencyDefaultButton.isHidden
     }
     
+    
     @objc func onClickPayFrequencyDefaultButton(sender: UIButton){
         if sender.currentTitle == selectionView.payFrequencyDefaultButton.currentTitle{
             for item in selectionView.payFrequencyButtons{
@@ -156,12 +182,14 @@ class TaxCalculationViewController: UIViewController {
         }
     }
     
+    
     @objc func onClickButtonsGetPayFrequency(sender: UIButton){
         selectionView.payFrequencyDefaultButton.setTitle(sender.currentTitle, for: .normal)
         for item in selectionView.payFrequencyButtons{
             item.isHidden = !item.isHidden
         }
     }
+    
     
     @objc func  onClickTFNButtons(sender: UIButton){
         if sender.currentTitle  == StringValue.checkboxUncheckedTextString
@@ -177,6 +205,7 @@ class TaxCalculationViewController: UIViewController {
         }
     }
     
+    
     @objc func onClickMedicareLevyButtons(sender: UIButton){
         if sender.currentTitle  == StringValue.checkboxUncheckedTextString
         {
@@ -190,6 +219,7 @@ class TaxCalculationViewController: UIViewController {
             model.setCheckbox2(medicareLevyButtonValue)
         }
     }
+    
     
     @objc func onClickHealthCoverButtons(sender: UIButton){
         if sender.currentTitle  == StringValue.checkboxUncheckedTextString
@@ -206,6 +236,11 @@ class TaxCalculationViewController: UIViewController {
     }
     
     
+    @objc func incomeValueTouchDown(textField: UITextField) {
+        if selectionView.incomeValue.text! == StringValue.incomeValueTextString{
+            selectionView.incomeValue.text = ""
+        }
+    }
     
     @objc func incomeValueDidChange(textField: UITextField) {
         if let rawIncomeValue: Double = Double(selectionView.incomeValue.text!){
@@ -245,7 +280,15 @@ class TaxCalculationViewController: UIViewController {
         }
     }
     
-    @objc func deductionasValueDidChange(textField: UITextField) {
+    
+    @objc func deductionsValueTouchDown(textField: UITextField) {
+        if selectionView.deductionsValue.text! == StringValue.deductionsValueTextString{
+            selectionView.deductionsValue.text = ""
+        }
+    }
+    
+    
+    @objc func deductionsValueDidChange(textField: UITextField) {
         if let rawDeductionsValue: Double = Double(selectionView.deductionsValue.text!){
             deductions = rawDeductionsValue
             model.setSecondOperand(deductions)
@@ -284,19 +327,51 @@ class TaxCalculationViewController: UIViewController {
     }
     
     
+    @objc func  financialYearValueDidChange(textField: UITextField) {
+        selectionView.financialYearValue.endEditing(true)
+        if selectionView.financialYearValue.text! != StringValue.financialYearValueTextString{
+            selectionView.financialYearValue.text = StringValue.financialYearValueTextString
+                let alert = UIAlertController(title: "Warning", message: "Please input the number", preferredStyle: .alert)
+                alert.addAction (UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
     @objc func residentialStatusDefaultValueDidChange(sender: UIButton){
         model.setThirdOperand(selectionView.residentialStatusDefaultButton.currentTitle!)
     }
+    
     
     @objc func payFrequencyDefaultValueDidChange(sender: UIButton){
         model.setFourOperand(selectionView.payFrequencyDefaultButton.currentTitle!)
     }
     
+    
+    //Y: code is from YangCai
     @objc func infoButtonTouched(sender: UIButton!) {
         let contributors = AppContributorsViewController(nibName: "AppContributorsViewController", bundle: nil)
-        
         present(contributors, animated: true, completion: nil)
+    }
+    
+    
+    //M: dismiss keyboard
+    @objc func dismissKeyboard() {
+        selectionView.incomeValue.endEditing(true)
+        selectionView.deductionsValue.endEditing(true)
+        selectionView.financialYearValue.endEditing(true)
         
+        for item in selectionView.payFrequencyButtons{
+            item.isHidden = true
+        }
+        selectionView.residentialStatusDefaultButton.isHidden = false
+        
+        for item in selectionView.residentialStatusButtons{
+            item.isHidden = true
+        }
+        selectionView.payFrequencyDefaultButton.isHidden = false
     }
     
 }
+
+

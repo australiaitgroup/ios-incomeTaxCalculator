@@ -6,6 +6,7 @@
 //  Copyright © 2019 LinLiu. All rights reserved.
 //
 
+
 import UIKit
 
 class SelectionView: UIView {
@@ -299,6 +300,7 @@ class SelectionView: UIView {
         gradientLayer1.mask = shape
         incomeValue.layer.addSublayer(gradientLayer1)
         
+        incomeValue.keyboardType = UIKeyboardType.decimalPad
  
     }
     
@@ -350,6 +352,8 @@ class SelectionView: UIView {
         
         gradientLayer3.mask = shape
         deductionsValue.layer.addSublayer(gradientLayer3)
+        
+        deductionsValue.keyboardType = UIKeyboardType.decimalPad
     }
     
     func addResidentialStatusValue(){
@@ -513,10 +517,12 @@ class SelectionView: UIView {
                                                       height: SizeConfig.residentialStatusForeignButtonHeight,
                                                       title: StringValue.residentialStatusForeignButtonTextString,
                                                       fontSize: FontConfig.residentialStatusForeignButtonTextFont,
-                                                      cornerRadius: 4,
+                                                      cornerRadius: 0,
                                                       backgroundColor: ColorConfig.residentialStatusForeignButtonBackgroundColor,
                                                       titleColor: ColorConfig.residentialStatusForeignButtonTextColor,
                                                       manager: self)
+        
+        residentialStatusForeignButton.roundedButton()
     }
 
     
@@ -527,7 +533,7 @@ class SelectionView: UIView {
                                                       height: SizeConfig.residentialStatusHolidayButtonHeight,
                                                       title: StringValue.residentialStatusHolidayButtonTextString,
                                                       fontSize: FontConfig.residentialStatusHolidayButtonTextFont,
-                                                      cornerRadius: 4,
+                                                      cornerRadius: 0,
                                                       backgroundColor: ColorConfig.residentialStatusHolidayButtonBackgroundColor,
                                                       titleColor: ColorConfig.residentialStatusHolidayButtonTextColor,
                                                       manager: self)
@@ -540,10 +546,11 @@ class SelectionView: UIView {
                                                       height: SizeConfig.residentialStatusAustralianButtonHeight,
                                                       title: StringValue.residentialStatusAustralianButtonTextString,
                                                       fontSize: FontConfig.residentialStatusAustralianButtonTextFont,
-                                                      cornerRadius: 4,
+                                                      cornerRadius: 0,
                                                       backgroundColor: ColorConfig.residentialStatusAustralianButtonBackgroundColor,
                                                       titleColor: ColorConfig.residentialStatusAustralianButtonTextColor,
                                                       manager: self)
+        residentialStatusAustralianButton.roundedBottomButton()
     }
     
     
@@ -567,10 +574,12 @@ class SelectionView: UIView {
                                                 height: SizeConfig.payFrequencyWeeklyButtonHeight,
                                                 title: StringValue.payFrequencyWeeklyButtonTextString,
                                                 fontSize: FontConfig.payFrequencyWeeklyButtonTextFont,
-                                                cornerRadius: 4,
+                                                cornerRadius: 0,
                                                 backgroundColor: ColorConfig.payFrequencyWeeklyButtonBackgroundColor,
                                                 titleColor: ColorConfig.payFrequencyWeeklyButtonTextColor,
                                                 manager: self)
+        
+        payFrequencyWeeklyButton.roundedButton()
     }
     
     func addPayFrequencyFornightlyButton(){
@@ -580,7 +589,7 @@ class SelectionView: UIView {
                                                 height: SizeConfig.payFrequencyFornightlyButtonHeight,
                                                 title: StringValue.payFrequencyFornightlyButtonTextString,
                                                 fontSize: FontConfig.payFrequencyFornightlyButtonTextFont,
-                                                cornerRadius: 4,
+                                                cornerRadius: 0,
                                                 backgroundColor: ColorConfig.payFrequencyFornightlyButtonBackgroundColor,
                                                 titleColor: ColorConfig.payFrequencyFornightlyButtonTextColor,
                                                 manager: self)
@@ -593,7 +602,7 @@ class SelectionView: UIView {
                                                 height: SizeConfig.payFrequencyMonthlyButtonHeight,
                                                 title: StringValue.payFrequencyMonthlyButtonTextString,
                                                 fontSize: FontConfig.payFrequencyMonthlyButtonTextFont,
-                                                cornerRadius: 4,
+                                                cornerRadius: 0,
                                                 backgroundColor: ColorConfig.payFrequencyMonthlyButtonBackgroundColor,
                                                 titleColor: ColorConfig.payFrequencyMonthlyButtonTextColor,
                                                 manager: self)
@@ -606,9 +615,33 @@ class SelectionView: UIView {
                                                 height: SizeConfig.payFrequencyYearlyButtonHeight,
                                                 title: StringValue.payFrequencyYearlyButtonTextString,
                                                 fontSize: FontConfig.payFrequencyYearlyButtonTextFont,
-                                                cornerRadius: 4,
+                                                cornerRadius: 0,
                                                 backgroundColor: ColorConfig.payFrequencyYearlyButtonBackgroundColor,
                                                 titleColor: ColorConfig.payFrequencyYearlyButtonTextColor,
                                                 manager: self)
+        payFrequencyYearlyButton.roundedBottomButton()
+    }
+}
+
+//M: set individual corner radius
+extension UIButton{
+    func roundedButton(){
+        let maskPath1 = UIBezierPath(roundedRect: bounds,
+                                     byRoundingCorners: [.topLeft , .topRight],
+                                     cornerRadii: CGSize(width: 8, height: 8))
+        let maskLayer1 = CAShapeLayer()
+        maskLayer1.frame = bounds
+        maskLayer1.path = maskPath1.cgPath
+        layer.mask = maskLayer1
+    }
+    
+    func roundedBottomButton(){
+        let maskPath2 = UIBezierPath(roundedRect: bounds,
+                                     byRoundingCorners: [.bottomLeft , .bottomRight],
+                                     cornerRadii: CGSize(width: 8, height: 8))
+        let maskLayer2 = CAShapeLayer()
+        maskLayer2.frame = bounds
+        maskLayer2.path = maskPath2.cgPath
+        layer.mask = maskLayer2
     }
 }
