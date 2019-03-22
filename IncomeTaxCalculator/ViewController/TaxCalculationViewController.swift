@@ -66,18 +66,7 @@ class TaxCalculationViewController: UIViewController {
         //M: other settings
         tap.addTarget(self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
-        
-        //M: check the title of the residentialStatusDefault is changed or not.
-        for item in selectionView.residentialStatusAllButtons{
-            item.addTarget(self, action: #selector(residentialStatusDefaultValueDidChange), for: .touchUpInside)
-        }
-        
-        //M: check the title of the payFrequencyDefault is changed or not.
-        for item in selectionView.payFrequencyAllButtons{
-            item.addTarget(self, action: #selector(payFrequencyDefaultValueDidChange), for: .touchUpInside)
-        }
-        
+    
         
         //M: add buttons
         //M:residentialStatus buttons
@@ -174,6 +163,8 @@ class TaxCalculationViewController: UIViewController {
             item.isHidden = true
         }
         selectionView.payFrequencyDefaultButton.isHidden = !selectionView.payFrequencyDefaultButton.isHidden
+        
+        model.setThirdOperand(selectionView.residentialStatusDefaultButton.currentTitle!)
     }
     
     
@@ -191,6 +182,7 @@ class TaxCalculationViewController: UIViewController {
         for item in selectionView.payFrequencyButtons{
             item.isHidden = !item.isHidden
         }
+        model.setFourOperand(selectionView.payFrequencyDefaultButton.currentTitle!)
     }
     
     
@@ -341,15 +333,6 @@ class TaxCalculationViewController: UIViewController {
     }
     
     
-    @objc func residentialStatusDefaultValueDidChange(sender: UIButton){
-        model.setThirdOperand(selectionView.residentialStatusDefaultButton.currentTitle!)
-    }
-    
-    
-    @objc func payFrequencyDefaultValueDidChange(sender: UIButton){
-        model.setFourOperand(selectionView.payFrequencyDefaultButton.currentTitle!)
-    }
-    
     
     //Y: code is from YangCai
     @objc func infoButtonTouched(sender: UIButton!) {
@@ -368,7 +351,7 @@ class TaxCalculationViewController: UIViewController {
             item.isHidden = true
         }
         selectionView.residentialStatusDefaultButton.isHidden = false
-        
+
         for item in selectionView.residentialStatusButtons{
             item.isHidden = true
         }
