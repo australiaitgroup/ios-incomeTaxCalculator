@@ -28,11 +28,7 @@ class AppContributorsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(self.view.bounds.height)
-//        print(self.view.center.y)
-//        print(self.view.bounds.midY)
-//        print(UIScreen.main.bounds.size)
-//        print(UIScreen.main.bounds.size.width)
+
         createGradientLayer()
         setLabels()
         setButtons()
@@ -61,7 +57,11 @@ class AppContributorsViewController: UIViewController {
         titleContent.textColor = color
         titleContent.center.x = xCenterPos * 1.3
         titleContent.center.y = yCenterPos - distance * 6
-       
+        
+        if UIScreen.main.bounds.size.height == 568 { // Means this is iPhone 5 series
+            titleBegin.center.x = xCenterPos/3
+            titleContent.center.x = xCenterPos * 1.4
+        }
     
     }
     
@@ -90,7 +90,16 @@ class AppContributorsViewController: UIViewController {
         let distance = UIScreen.main.bounds.size.height / 15
         let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
-//        let distance = self.view.bounds.height / 15
+        print(UIScreen.main.bounds.size.height)
+        if UIScreen.main.bounds.size.height == 568 { // Means this is iPhone 5 series
+            MichealLinLiu.frame = CGRect(x: 0, y: 0, width: 310, height: 40)
+            CaiYang.frame = CGRect(x: 0, y: 0, width: 310, height: 40)
+            SissyZhou.frame = CGRect(x: 0, y: 0, width: 310, height: 40)
+            Lightman.frame = CGRect(x: 0, y: 0, width: 310, height: 40)
+            MichealDing.frame = CGRect(x: 0, y: 0, width: 310, height: 40)
+
+        }
+        
         
         //MichealLinLiu.setTitle("Micheal Lin Liu", for: .normal)
         setMultipleFonts(button: MichealLinLiu, title: "Developer  ", name: "Micheal Lin Liu")
@@ -159,8 +168,12 @@ class AppContributorsViewController: UIViewController {
         
         returnButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
         returnButton.center.x = xCenterPos * 1.7
-        returnButton.center.y = yCenterPos + distance * (6 * distance / 60)
+        returnButton.center.y = yCenterPos + distance * (distance / 10)
         returnButton.addTarget(self, action: #selector(returnButtonTouched), for: .touchUpInside)
+        
+        if UIScreen.main.bounds.size.height == 896 { // Means this is iPhone XS Max
+            returnButton.center.y = yCenterPos + distance * (distance / 11)
+        }
     }
     
     @objc func buttonAction(sender: UIButton!) {
