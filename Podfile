@@ -3,6 +3,4 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'IncomeTaxCalculator' do
-    pod 'Alamofire', '~> 4.7'
-    pod 'RealmSwift'
 end
