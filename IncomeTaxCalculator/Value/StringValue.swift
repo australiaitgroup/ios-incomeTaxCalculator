@@ -52,13 +52,13 @@ struct StringValue {
     
     static let calculateButtonTextString = "Calculate"
     
-    static let residentialStatusDefaultButtonTextString = "Australian Residents"
+    static let residentialStatusDefaultButtonTextString = "Australian Residents  "
     
     static let residentialStatusForeignButtonTextString = "Foreign Residents"
     
     static let residentialStatusHolidayButtonTextString = "Working Holiday"
     
-    static let residentialStatusAustralianButtonTextString = "Australian Residents"
+    static let residentialStatusAustralianButtonTextString = "Australian Residents  "
     
     static let payFrequencyDefaultButtonTextString = "Yearly"
     
