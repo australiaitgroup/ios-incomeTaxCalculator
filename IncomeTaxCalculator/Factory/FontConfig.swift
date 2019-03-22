@@ -9,37 +9,1099 @@
 import UIKit
 
 struct FontConfig {
-    //M: mainView elements
-    static let resultLabelTextFont = UIFont.systemFont(ofSize: 45)
     
-    static let hintLabelTextFont = UIFont.systemFont(ofSize: 13)
+    static var resultLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 35)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 35)
+        case "iPhone SE":
+            return .systemFont(ofSize: 35)
+        
+        case "iPhone 6":
+            return .systemFont(ofSize: 40)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 40)
+        case "iPhone 7":
+            return .systemFont(ofSize: 40)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 40)
+        case "iPhone 8":
+            return .systemFont(ofSize: 40)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 45)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 45)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 45)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 45)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 45)
+            
+        case "iPhone X":
+            return .systemFont(ofSize: 45)
+        case "iPhone XS":
+            return .systemFont(ofSize: 45)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 45)
+        case "iPhone XR":
+            return .systemFont(ofSize: 45)
+            
+        default:
+            return .systemFont(ofSize: 45)
+        }
+    }
     
-    //M: selectionView
-    static let incomeLabelTextFont = UIFont.boldSystemFont(ofSize: 16)
     
-    static let financialYearLabelTextFont = UIFont.boldSystemFont(ofSize: 16)
+    static var hintLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 8)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 8)
+        case "iPhone SE":
+            return .systemFont(ofSize: 8)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 10)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 10)
+        case "iPhone 7":
+            return .systemFont(ofSize: 10)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 10)
+        case "iPhone 8":
+            return .systemFont(ofSize: 10)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 11)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 11)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 11)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 11)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 11)
+            
+        case "iPhone X":
+            return .systemFont(ofSize: 12)
+        case "iPhone XS":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 13)
+        case "iPhone XR":
+            return .systemFont(ofSize: 13)
+            
+        default:
+            return .systemFont(ofSize: 13)
+        }
+    }
     
-    static let deductionsLabelTextFont = UIFont.boldSystemFont(ofSize: 16)
     
-    static let residentialStatusLabelTextFont = UIFont.boldSystemFont(ofSize: 16)
+    static var incomeLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 12)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 12)
+        case "iPhone SE":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 14)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 8":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone X":
+            return .systemFont(ofSize: 14)
+        case "iPhone XS":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 16)
+        case "iPhone XR":
+            return .systemFont(ofSize: 16)
+            
+        default:
+            return .systemFont(ofSize: 16)
+        }
+    }
     
-    static let payFrequencyLabelTextFont = UIFont.boldSystemFont(ofSize: 16)
     
-    static let TFNLabelTextFont = UIFont.boldSystemFont(ofSize: 17)
+    static var financialYearLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 12)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 12)
+        case "iPhone SE":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 14)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 8":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone X":
+            return .systemFont(ofSize: 14)
+        case "iPhone XS":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 16)
+        case "iPhone XR":
+            return .systemFont(ofSize: 16)
+            
+        default:
+            return .systemFont(ofSize: 16)
+        }
+    }
+    
+    static var deductionsLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 12)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 12)
+        case "iPhone SE":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 14)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 8":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone X":
+            return .systemFont(ofSize: 14)
+        case "iPhone XS":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 16)
+        case "iPhone XR":
+            return .systemFont(ofSize: 16)
+            
+        default:
+            return .systemFont(ofSize: 16)
+        }
+    }
+    
+    static var residentialStatusLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 12)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 12)
+        case "iPhone SE":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 14)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 8":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone X":
+            return .systemFont(ofSize: 14)
+        case "iPhone XS":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 16)
+        case "iPhone XR":
+            return .systemFont(ofSize: 16)
+            
+        default:
+            return .systemFont(ofSize: 16)
+        }
+    }
 
-    static let medicareLevyLabelTextFont = UIFont.boldSystemFont(ofSize: 17)
     
-    static let healthCoverLabelTextFont = UIFont.boldSystemFont(ofSize: 17)
+    static var payFrequencyLabelTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 12)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 12)
+        case "iPhone SE":
+            return .systemFont(ofSize: 12)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 14)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7":
+            return .systemFont(ofSize: 14)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 14)
+        case "iPhone 8":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 16)
+        case "iPhone X":
+            return .systemFont(ofSize: 14)
+        case "iPhone XS":
+            return .systemFont(ofSize: 14)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 16)
+        case "iPhone XR":
+            return .systemFont(ofSize: 16)
+            
+        default:
+            return .systemFont(ofSize: 16)
+        }
+    }
     
-    static let incomeValueTextFont = UIFont.systemFont(ofSize: 19)
     
-    static let financialYearValueTextFont = UIFont.systemFont(ofSize: 19)
+    static var TFNLabelTextFont : UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
     
-    static let deductionsValueTextFont = UIFont.systemFont(ofSize: 19)
+    static var medicareLevyLabelTextFont : UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
     
-    static let residentialStatusValueTextFont = UIFont.systemFont(ofSize: 19)
+    static var healthCoverLabelTextFont  : UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
     
-    static let payFrequencyValueTextFont = UIFont.systemFont(ofSize: 19)
+    static var incomeValueTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
+    
+    
+    static var financialYearValueTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
+    
+    static var deductionsValueTextFont: UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
+    
+    
+    static var residentialStatusValueTextFont : UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
+    
+    
+    static var payFrequencyValueTextFont : UIFont{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return .systemFont(ofSize: 13)
+        case "iPhone 5S":
+            return .systemFont(ofSize: 13)
+        case "iPhone SE":
+            return .systemFont(ofSize: 13)
+            
+        case "iPhone 6":
+            return .systemFont(ofSize: 15)
+        case "iPhone 6s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7":
+            return .systemFont(ofSize: 15)
+        case "iPhone 7s":
+            return .systemFont(ofSize: 15)
+        case "iPhone 8":
+            return .systemFont(ofSize: 15)
+            
+        case "iPhone 6 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 6s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 7s Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone 8 Plus":
+            return .systemFont(ofSize: 17)
+        case "iPhone X":
+            return .systemFont(ofSize: 16)
+        case "iPhone XS":
+            return .systemFont(ofSize: 16)
+            
+        case "iPhone XS Max":
+            return .systemFont(ofSize: 17)
+        case "iPhone XR":
+            return .systemFont(ofSize: 17)
+            
+        default:
+            return .systemFont(ofSize: 17)
+        }
+    }
+    
+    
+    static var residentialStatusDefaultButtonTextFont  : CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var residentialStatusForeignButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var residentialStatusHolidayButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    
+    static var residentialStatusAustralianButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var payFrequencyDefaultButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var payFrequencyWeeklyButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var payFrequencyFornightlyButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var payFrequencyMonthlyButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+    
+    static var payFrequencyYearlyButtonTextFont: CGFloat{
+        switch UIDevice.current.name{
+        case "iPhone 5":
+            return 14
+        case "iPhone 5S":
+            return 14
+        case "iPhone SE":
+            return 14
+            
+        case "iPhone 6":
+            return 16
+        case "iPhone 6s":
+            return 16
+        case "iPhone 7":
+            return 16
+        case "iPhone 7s":
+            return 16
+        case "iPhone 8":
+            return 16
+            
+        case "iPhone 6 Plus":
+            return 17
+        case "iPhone 6s Plus":
+            return 17
+        case "iPhone 7 Plus":
+            return 17
+        case "iPhone 7s Plus":
+            return 17
+        case "iPhone 8 Plus":
+            return 17
+        case "iPhone X":
+            return 16
+        case "iPhone XS":
+            return 16
+            
+        case "iPhone XS Max":
+            return 17
+        case "iPhone XR":
+            return 17
+            
+        default:
+            return 17
+        }
+    }
+ 
     
     static let TFNButtonTextFont: CGFloat = 25
     
@@ -48,22 +1110,4 @@ struct FontConfig {
     static let healthCoverButtonTextFont: CGFloat = 25
     
     static let calculateButtonTextFont: CGFloat = 17
-    
-    static let residentialStatusDefaultButtonTextFont: CGFloat = 17
-    
-    static let residentialStatusForeignButtonTextFont: CGFloat = 17
-    
-    static let residentialStatusHolidayButtonTextFont: CGFloat = 17
-    
-    static let residentialStatusAustralianButtonTextFont: CGFloat = 17
-    
-    static let payFrequencyDefaultButtonTextFont: CGFloat = 17
-    
-    static let payFrequencyWeeklyButtonTextFont: CGFloat = 17
-    
-    static let payFrequencyFornightlyButtonTextFont: CGFloat = 17
-    
-    static let payFrequencyMonthlyButtonTextFont: CGFloat = 17
-    
-    static let payFrequencyYearlyButtonTextFont: CGFloat = 17
 }

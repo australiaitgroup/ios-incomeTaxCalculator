@@ -40,7 +40,7 @@ struct StringValue {
     
     static let payFrequencyValueTextString = "                                       ▼"
     
-    static let TFNButtonTextString = " "
+    static let TFNButtonTextString = "✓"
     
     static let medicareLevyButtonTextString = " "
     
@@ -60,7 +60,7 @@ struct StringValue {
     
     static let residentialStatusAustralianButtonTextString = "Australian Residents"
     
-    static let payFrequencyDefaultButtonTextString = "Fornightly"
+    static let payFrequencyDefaultButtonTextString = "Yearly"
     
     static let payFrequencyWeeklyButtonTextString = "Weekly"
     
