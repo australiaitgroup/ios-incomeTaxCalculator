@@ -22,7 +22,7 @@ struct StringValue {
     
     static let payFrequencyLabelTextString = "Pay Frequency"
     
-    static let TFNLabelTextString = "Has a worker provided a TFN"
+    static let TFNLabelTextString = "Has a TFN"
     
     static let medicareLevyLabelTextString = "Includes medicare levy"
     
@@ -30,7 +30,7 @@ struct StringValue {
     
     static let incomeValueTextString = "$0.00"
     
-    static let financialYearValueTextString = "YR2019"
+    static let financialYearValueTextString = "2019"
     
     static let deductionsValueTextString = "$0.00"
     
