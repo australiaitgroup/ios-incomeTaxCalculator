@@ -12,7 +12,7 @@ struct FontConfig {
     
     static var resultLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 35)
         case "iPhone 5S":
             return .systemFont(ofSize: 35)
@@ -59,7 +59,7 @@ struct FontConfig {
     
     static var hintLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 8)
         case "iPhone 5S":
             return .systemFont(ofSize: 8)
@@ -106,7 +106,7 @@ struct FontConfig {
     
     static var incomeLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 12)
         case "iPhone 5S":
             return .systemFont(ofSize: 12)
@@ -152,7 +152,7 @@ struct FontConfig {
     
     static var financialYearLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 12)
         case "iPhone 5S":
             return .systemFont(ofSize: 12)
@@ -197,7 +197,7 @@ struct FontConfig {
     
     static var deductionsLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 12)
         case "iPhone 5S":
             return .systemFont(ofSize: 12)
@@ -242,7 +242,7 @@ struct FontConfig {
     
     static var residentialStatusLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 12)
         case "iPhone 5S":
             return .systemFont(ofSize: 12)
@@ -288,7 +288,7 @@ struct FontConfig {
     
     static var payFrequencyLabelTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 12)
         case "iPhone 5S":
             return .systemFont(ofSize: 12)
@@ -334,7 +334,7 @@ struct FontConfig {
     
     static var TFNLabelTextFont : UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -379,7 +379,7 @@ struct FontConfig {
     
     static var medicareLevyLabelTextFont : UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -424,7 +424,7 @@ struct FontConfig {
     
     static var healthCoverLabelTextFont  : UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -469,7 +469,7 @@ struct FontConfig {
     
     static var incomeValueTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -515,7 +515,7 @@ struct FontConfig {
     
     static var financialYearValueTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -560,7 +560,7 @@ struct FontConfig {
     
     static var deductionsValueTextFont: UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -606,7 +606,7 @@ struct FontConfig {
     
     static var residentialStatusValueTextFont : UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -652,7 +652,7 @@ struct FontConfig {
     
     static var payFrequencyValueTextFont : UIFont{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return .systemFont(ofSize: 13)
         case "iPhone 5S":
             return .systemFont(ofSize: 13)
@@ -698,7 +698,7 @@ struct FontConfig {
     
     static var residentialStatusDefaultButtonTextFont  : CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -743,7 +743,7 @@ struct FontConfig {
     
     static var residentialStatusForeignButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -788,7 +788,7 @@ struct FontConfig {
     
     static var residentialStatusHolidayButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -834,7 +834,7 @@ struct FontConfig {
     
     static var residentialStatusAustralianButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -879,7 +879,7 @@ struct FontConfig {
     
     static var payFrequencyDefaultButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -924,7 +924,7 @@ struct FontConfig {
     
     static var payFrequencyWeeklyButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -969,7 +969,7 @@ struct FontConfig {
     
     static var payFrequencyFornightlyButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -1014,7 +1014,7 @@ struct FontConfig {
     
     static var payFrequencyMonthlyButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
@@ -1059,7 +1059,7 @@ struct FontConfig {
     
     static var payFrequencyYearlyButtonTextFont: CGFloat{
         switch UIDevice.current.name{
-        case "iPhone 5":
+        case "iPod Touch":
             return 14
         case "iPhone 5S":
             return 14
