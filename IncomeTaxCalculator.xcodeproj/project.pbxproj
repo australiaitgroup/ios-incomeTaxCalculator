@@ -260,7 +260,6 @@
 				AAB9EB12215EFC8C006120F9 /* Sources */,
 				AAB9EB13215EFC8C006120F9 /* Frameworks */,
 				AAB9EB14215EFC8C006120F9 /* Resources */,
-				54CB2CD21B3D864BA660D7B4 /* [CP] Embed Pods Frameworks */,
 				B54EDF8421BB87B200D941DD /* ShellScript */,
 			);
 			buildRules = (
@@ -387,32 +386,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54CB2CD21B3D864BA660D7B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9BCEF5CE00C49F4C42958869 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
