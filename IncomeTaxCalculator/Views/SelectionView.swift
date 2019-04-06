@@ -326,7 +326,7 @@ class SelectionView: UIView {
         shape.fillColor = UIColor.clear.cgColor
         
         gradientLayer2.mask = shape
-        financialYearValue.layer.addSublayer(gradientLayer2)
+        //financialYearValue.layer.addSublayer(gradientLayer2)
     }
     
     func addDeductionsValue(){

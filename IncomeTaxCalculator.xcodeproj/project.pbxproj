@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13B2A6DB224F676700868667 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B2A6DA224F676700868667 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		131B216322589E4A00D36294 /* info.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 131B216222589E4A00D36294 /* info.PNG */; };
 		AA4204A422333272009C9346 /* GradientLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049222333270009C9346 /* GradientLayers.swift */; };
 		AA4204A522333272009C9346 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049322333270009C9346 /* FontConfig.swift */; };
 		AA4204A622333272009C9346 /* ColorConfig .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049422333270009C9346 /* ColorConfig .swift */; };
@@ -55,6 +55,7 @@
 /* Begin PBXFileReference section */
 		0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0CB20A65E348F07A7430A4 /* Pods-IncomeTaxCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		131B216222589E4A00D36294 /* info.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.PNG; path = ../../../../../Desktop/info.PNG; sourceTree = "<group>"; };
 		13B2A6DA224F676700868667 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA42049222333270009C9346 /* GradientLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayers.swift; sourceTree = "<group>"; };
 		AA42049322333270009C9346 /* FontConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B2A6DB224F676700868667 /* Alamofire.framework in Frameworks */,
 				E9B9AE5636884699E1D0C8B5 /* Pods_IncomeTaxCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +202,7 @@
 				AAB9EB25215EFC8E006120F9 /* Info.plist */,
 				B5932F2A21F2A7080089804D /* Wave3.jpg */,
 				B5932F2D21F494230089804D /* Button2.jpg */,
+				131B216222589E4A00D36294 /* info.PNG */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -363,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51F64842235F6F300E626E9 /* TaxCalculationViewController.xib in Resources */,
+				131B216322589E4A00D36294 /* info.PNG in Resources */,
 				B5932F2F21F494230089804D /* Button2.jpg in Resources */,
 				AA4204B022333272009C9346 /* calculateButton.png in Resources */,
 				AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */,
@@ -628,8 +630,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 728PUNG66Y;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -638,7 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.ict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = iODDev;
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -651,9 +653,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 728PUNG66Y;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X5YTQTN7ZM;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = IncomeTaxCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,7 +664,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.ict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = IOSICTDist;
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

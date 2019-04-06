@@ -29,6 +29,7 @@ class TaxCalculationViewController: UIViewController {
     var healthCoverButtonValue: Bool = false
     
     var infoButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+   
     
     
     
@@ -47,6 +48,8 @@ class TaxCalculationViewController: UIViewController {
         selectionView.residentialStatusValue.isUserInteractionEnabled = false
         
         selectionView.payFrequencyValue.isUserInteractionEnabled = false
+        
+        selectionView.financialYearValue.isUserInteractionEnabled = false
         
         model.setOperand(0.0)
         
@@ -126,7 +129,7 @@ class TaxCalculationViewController: UIViewController {
         let xCenterPos = UIScreen.main.bounds.size.width/2
         let yCenterPos = UIScreen.main.bounds.size.height/2
         
-        infoButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
+        infoButton.setImage(#imageLiteral(resourceName: "info.PNG"), for: .normal)
         infoButton.center.x = xCenterPos * 1.8
         infoButton.center.y = yCenterPos * 1.9
         infoButton.addTarget(self, action: #selector(infoButtonTouched), for: .touchUpInside)
