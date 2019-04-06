@@ -20,7 +20,7 @@ class AppContributorsViewController: UIViewController {
     var SissyZhou = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
     var Lightman = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
     var MichealDing = UIButton(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
-    var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    var returnButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
     
     let titleFont = UIFont(name: "ChalkboardSE-Bold", size: 25)
     let contentFont = UIFont(name: "Chalkboard SE", size: 25)
@@ -113,6 +113,7 @@ class AppContributorsViewController: UIViewController {
         MichealLinLiu.center.x = xCenterPos
         MichealLinLiu.center.y = yCenterPos - distance * 4.5
         MichealLinLiu.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
         
         //CaiYang.setTitle("Cai Yang", for: .normal)
         setMultipleFonts(button: CaiYang, title: "Developer  ", name: "Cai Yang")
@@ -278,8 +279,9 @@ class AppContributorsViewController: UIViewController {
     func setMultipleFonts(button:UIButton, title:String, name:String){
 //        let attributedText = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont(name: "ChalkboardSE-Bold", size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.white])
 //        attributedText.append(NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont(name: "Chalkboard SE", size: 25)!, NSAttributedString.Key.foregroundColor: UIColor.white]))
-        let attributedText = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 25),NSAttributedString.Key.foregroundColor: UIColor.white])
-        attributedText.append(NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: 25), NSAttributedString.Key.foregroundColor: UIColor.white]))
+        let attributedText = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20),NSAttributedString.Key.foregroundColor: UIColor.white])
+        
+        attributedText.append(NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.italicSystemFont(ofSize: FontConfig.payFrequencyYearlyButtonTextFont), NSAttributedString.Key.foregroundColor: UIColor.white]))
         button.setAttributedTitle(attributedText,for: .normal)
     }
 }

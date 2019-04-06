@@ -236,7 +236,7 @@ class TaxCalculationViewController: UIViewController {
     
     @objc func incomeValueTouchDown(textField: UITextField) {
         if selectionView.incomeValue.text! == StringValue.incomeValueTextString{
-            selectionView.incomeValue.text = ""
+            selectionView.incomeValue.text = "0"
         }
     }
     
@@ -281,7 +281,7 @@ class TaxCalculationViewController: UIViewController {
     
     @objc func deductionsValueTouchDown(textField: UITextField) {
         if selectionView.deductionsValue.text! == StringValue.deductionsValueTextString{
-            selectionView.deductionsValue.text = ""
+            selectionView.deductionsValue.text = "0"
         }
     }
     

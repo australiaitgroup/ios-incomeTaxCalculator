@@ -24,7 +24,7 @@ struct SizeConfig {
     static let resultLabelWidth = UIScreen.main.bounds.size.width  / 10 * 9
     
     static let hintLabelX = mainWidth / 10 * 0.5
-    static let hintLabelY = mainHeight / 10 * 1.75
+    static let hintLabelY = mainHeight / 10 * 1.73
     static let hintLabelHeight = UIScreen.main.bounds.size.height / 10 * 2.3 / 3.5
     static let hintLabelWidth = UIScreen.main.bounds.size.width / 10 * 8.5
     
