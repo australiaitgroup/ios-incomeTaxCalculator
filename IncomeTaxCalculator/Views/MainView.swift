@@ -11,6 +11,7 @@ import UIKit
 class MainView: UIView {
     var resultLabel = UILabel()
     var hintLabel = UILabel()
+    var displayLabel = UILabel()
     
     
     override init(frame: CGRect) {
@@ -20,9 +21,11 @@ class MainView: UIView {
         
         self.defineBackgroundColor()
         
-        self.addResultLabel()
+        self.addDisplayLabel()
         
         self.addHintLabel()
+        
+        self.addResultLabel()
     }
     
     
@@ -43,7 +46,7 @@ class MainView: UIView {
     
     func addResultLabel(){
         resultLabel = Labels.init(x: SizeConfig.resultLabelX,
-                                 y: SizeConfig.resultLabelY,
+                                 y: SizeConfig.resultLabelY - 5 ,
                                  width: SizeConfig.resultLabelWidth,
                                  height: SizeConfig.resultLabelHeight,
                                  cornerRadius: 9,
@@ -56,6 +59,21 @@ class MainView: UIView {
                                  manager: self)
         
         print(resultLabel.frame.width)
+    }
+    
+    func addDisplayLabel(){
+        displayLabel = Labels.init(x: SizeConfig.resultLabelX,
+                                    y: SizeConfig.resultLabelY,
+                                    width: SizeConfig.resultLabelWidth,
+                                    height: SizeConfig.resultLabelHeight,
+                                    cornerRadius: 9,
+                                    backgroundColor: ColorConfig.displayLabelBackgroundColor,
+                                    textAlignment: NSTextAlignment.center,
+                                    textColor: ColorConfig.resultLabelTextColor,
+                                    fitWidth: true,
+                                    font: FontConfig.resultLabelTextFont,
+                                    text: " ",
+                                    manager: self)
     }
     
     

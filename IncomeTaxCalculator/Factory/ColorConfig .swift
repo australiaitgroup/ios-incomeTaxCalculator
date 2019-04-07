@@ -13,8 +13,11 @@ struct ColorConfig {
     static let mainViewBackgroundColor = UIColor(red: (5 / 255.0), green: (23 / 255.0), blue: (66 / 255.0), alpha: 1)
     
     //M: result label
-    static let resultLabelBackgroundColor = UIColor(red: (47 / 255.0), green: (61 / 255.0), blue: (88 / 255.0), alpha: 1)
+    static let resultLabelBackgroundColor = UIColor.clear
     static let resultLabelTextColor = UIColor.white
+    
+    //M: display label
+    static let displayLabelBackgroundColor = UIColor(red: (47 / 255.0), green: (61 / 255.0), blue: (88 / 255.0), alpha: 1)
     
     //M: hint label
     static let hintLabelBackgroundColor = UIColor.clear
