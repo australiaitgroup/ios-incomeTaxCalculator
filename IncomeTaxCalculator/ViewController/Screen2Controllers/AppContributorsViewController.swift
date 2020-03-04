@@ -167,8 +167,8 @@ class AppContributorsViewController: UIViewController {
         MichealDing.center.y = yCenterPos + distance * 1.5
         MichealDing.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
-       
-        returnButton.setImage(#imageLiteral(resourceName: "Button2.jpg"), for: .normal)
+
+        returnButton.setTitle("←", for: .normal)
         returnButton.center.x = xCenterPos * 1.7
         returnButton.center.y = yCenterPos + distance * (distance / 10)
         returnButton.addTarget(self, action: #selector(returnButtonTouched), for: .touchUpInside)

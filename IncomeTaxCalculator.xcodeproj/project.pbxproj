@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		131B216322589E4A00D36294 /* info.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 131B216222589E4A00D36294 /* info.PNG */; };
+		132ADD1922AA716F00E25912 /* info.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 132ADD1822AA716F00E25912 /* info.PNG */; };
+		13EADA58237FAE39003489B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EADA57237FAE39003489B1 /* Main.storyboard */; };
 		AA4204A422333272009C9346 /* GradientLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049222333270009C9346 /* GradientLayers.swift */; };
 		AA4204A522333272009C9346 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049322333270009C9346 /* FontConfig.swift */; };
 		AA4204A622333272009C9346 /* ColorConfig .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049422333270009C9346 /* ColorConfig .swift */; };
@@ -16,7 +17,6 @@
 		AA4204A922333272009C9346 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049822333270009C9346 /* Buttons.swift */; };
 		AA4204AA22333272009C9346 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049922333270009C9346 /* Labels.swift */; };
 		AA4204AB22333272009C9346 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049B22333271009C9346 /* SelectionView.swift */; };
-		AA4204AC22333272009C9346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA42049C22333271009C9346 /* Main.storyboard */; };
 		AA4204AD22333272009C9346 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42049E22333271009C9346 /* MainView.swift */; };
 		AA4204AE22333272009C9346 /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4204A022333271009C9346 /* CalculationModel.swift */; };
 		AA4204AF22333272009C9346 /* StringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4204A222333272009C9346 /* StringValue.swift */; };
@@ -30,8 +30,6 @@
 		B51F64802235F08E00E626E9 /* TaxCalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */; };
 		B51F64832235F6CF00E626E9 /* AppContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */; };
 		B51F64842235F6F300E626E9 /* TaxCalculationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */; };
-		B5932F2C21F2A7080089804D /* Wave3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2A21F2A7080089804D /* Wave3.jpg */; };
-		B5932F2F21F494230089804D /* Button2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5932F2D21F494230089804D /* Button2.jpg */; };
 		E9B9AE5636884699E1D0C8B5 /* Pods_IncomeTaxCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,9 @@
 /* Begin PBXFileReference section */
 		0464AF5CDB8FBA9B293D37A1 /* Pods_IncomeTaxCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncomeTaxCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0CB20A65E348F07A7430A4 /* Pods-IncomeTaxCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		131B216222589E4A00D36294 /* info.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.PNG; path = ../../../../../Desktop/info.PNG; sourceTree = "<group>"; };
+		132ADD1822AA716F00E25912 /* info.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.PNG; sourceTree = "<group>"; };
 		13B2A6DA224F676700868667 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EADA57237FAE39003489B1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AA42049222333270009C9346 /* GradientLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayers.swift; sourceTree = "<group>"; };
 		AA42049322333270009C9346 /* FontConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
 		AA42049422333270009C9346 /* ColorConfig .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorConfig .swift"; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 		AA42049822333270009C9346 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		AA42049922333270009C9346 /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		AA42049B22333271009C9346 /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
-		AA42049D22333271009C9346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA42049E22333271009C9346 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AA4204A022333271009C9346 /* CalculationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
 		AA4204A222333272009C9346 /* StringValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringValue.swift; sourceTree = "<group>"; };
@@ -86,8 +84,6 @@
 		B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppContributorsViewController.xib; sourceTree = "<group>"; };
 		B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculationViewController.swift; sourceTree = "<group>"; };
 		B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxCalculationViewController.xib; sourceTree = "<group>"; };
-		B5932F2A21F2A7080089804D /* Wave3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wave3.jpg; sourceTree = SOURCE_ROOT; };
-		B5932F2D21F494230089804D /* Button2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button2.jpg; sourceTree = SOURCE_ROOT; };
 		DF8FBAD124DA7E82925052FA /* Pods-IncomeTaxCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncomeTaxCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncomeTaxCalculator/Pods-IncomeTaxCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +113,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139E28BC22815ECB006F9071 /* Screen2Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B506BEEC2235F07600897F8B /* AppContributorsViewController.swift */,
+				B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */,
+			);
+			path = Screen2Controllers;
+			sourceTree = "<group>";
+		};
+		139E28BD22815EDF006F9071 /* Screen1Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */,
+				B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */,
+			);
+			path = Screen1Controllers;
+			sourceTree = "<group>";
+		};
+		13EC265322AB5B6B00AA4F0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */,
+				AAB9EB20215EFC8E006120F9 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13EC265422AB5BB400AA4F0C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				132ADD1822AA716F00E25912 /* info.PNG */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AA42049122333270009C9346 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +172,9 @@
 		AA42049A22333271009C9346 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				13EADA57237FAE39003489B1 /* Main.storyboard */,
+				AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */,
 				AA42049B22333271009C9346 /* SelectionView.swift */,
-				AA42049C22333271009C9346 /* Main.storyboard */,
 				AA42049E22333271009C9346 /* MainView.swift */,
 			);
 			path = Views;
@@ -196,13 +228,9 @@
 				AA4204A122333272009C9346 /* Value */,
 				AA42049622333270009C9346 /* ViewModel */,
 				AA42049A22333271009C9346 /* Views */,
-				AAB9EB19215EFC8C006120F9 /* AppDelegate.swift */,
-				AAB9EB20215EFC8E006120F9 /* Assets.xcassets */,
-				AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */,
+				13EC265322AB5B6B00AA4F0C /* Supporting Files */,
+				13EC265422AB5BB400AA4F0C /* New Group */,
 				AAB9EB25215EFC8E006120F9 /* Info.plist */,
-				B5932F2A21F2A7080089804D /* Wave3.jpg */,
-				B5932F2D21F494230089804D /* Button2.jpg */,
-				131B216222589E4A00D36294 /* info.PNG */,
 			);
 			path = IncomeTaxCalculator;
 			sourceTree = "<group>";
@@ -228,10 +256,8 @@
 		B51F64822235F0A100E626E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B506BEEC2235F07600897F8B /* AppContributorsViewController.swift */,
-				B51F647E2235F08C00E626E9 /* AppContributorsViewController.xib */,
-				B51F647F2235F08E00E626E9 /* TaxCalculationViewController.swift */,
-				B51F64812235F09000E626E9 /* TaxCalculationViewController.xib */,
+				139E28BD22815EDF006F9071 /* Screen1Controllers */,
+				139E28BC22815ECB006F9071 /* Screen2Controllers */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -324,16 +350,16 @@
 				TargetAttributes = {
 					AAB9EB15215EFC8C006120F9 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					AAB9EB29215EFC8E006120F9 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						TestTargetID = AAB9EB15215EFC8C006120F9;
 					};
 					AAB9EB34215EFC8E006120F9 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						TestTargetID = AAB9EB15215EFC8C006120F9;
 					};
 				};
@@ -345,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = AAB9EB0D215EFC8C006120F9;
 			productRefGroup = AAB9EB17215EFC8C006120F9 /* Products */;
@@ -363,13 +390,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EADA58237FAE39003489B1 /* Main.storyboard in Resources */,
 				B51F64842235F6F300E626E9 /* TaxCalculationViewController.xib in Resources */,
-				131B216322589E4A00D36294 /* info.PNG in Resources */,
-				B5932F2F21F494230089804D /* Button2.jpg in Resources */,
 				AA4204B022333272009C9346 /* calculateButton.png in Resources */,
 				AAB9EB24215EFC8E006120F9 /* LaunchScreen.storyboard in Resources */,
-				AA4204AC22333272009C9346 /* Main.storyboard in Resources */,
-				B5932F2C21F2A7080089804D /* Wave3.jpg in Resources */,
+				132ADD1922AA716F00E25912 /* info.PNG in Resources */,
 				B51F64832235F6CF00E626E9 /* AppContributorsViewController.xib in Resources */,
 				AAB9EB21215EFC8E006120F9 /* Assets.xcassets in Resources */,
 			);
@@ -487,14 +512,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA42049C22333271009C9346 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA42049D22333271009C9346 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AAB9EB22215EFC8E006120F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -642,7 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = iODDev;
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -666,7 +683,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = IOSICTDist;
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -685,7 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncomeTaxCalculator.app/IncomeTaxCalculator";
 			};
@@ -705,7 +722,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncomeTaxCalculator.app/IncomeTaxCalculator";
 			};
@@ -724,7 +741,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IncomeTaxCalculator;
 			};
@@ -743,7 +760,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.jiangren.IncomeTaxCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IncomeTaxCalculator;
 			};
